@@ -4,6 +4,7 @@ import Modal from './components/Modal';
 import RouteTest from './components/RouteTest';
 import Contents from './components/Contents';
 import Navbar from './components/Navbar';
+import Home from './components/pages/Home';
 
 import {
   BrowserRouter as Router,
@@ -21,7 +22,7 @@ function App() {
     <Router>
       <Navbar></Navbar>
       <Switch>
-        <Route path="/" exact></Route>
+        <Route path="/" exact component={Home}></Route>
       </Switch>
     </Router>
       {/* <nav className="nav">

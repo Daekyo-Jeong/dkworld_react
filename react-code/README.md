@@ -5,3 +5,90 @@
 
 ## 20210907 React start
 시작 !
+
+## 20210915
+### 카드형 UI component 분리
+
+```javascript
+function Carditem(props) {
+    return (
+        <>
+            <li className="cards__item">
+                <Link className="cards__item__link" to={props.path}>
+                    <figure className="cards__item__pic-wrap" data-category={props.label}>
+                        <img src={props.src} alt="Travel Image" className="cards__item__img" />
+                    </figure>
+                    <div className="cards__item__info">
+                        <h5 className="cards__item__text">{props.text}</h5>
+                        {/* <p className="cards__item__desc">{props.desc}</p> */}
+                    </div>
+                </Link>
+            </li>
+        </>
+    )
+}
+```
+
+props 로 변수를 할당해서, 다른 컴포넌트에서도 관리할 수 있도록
+
+```html
+<Carditem
+    src="images/img-9.jpeg"
+    text="this is world "
+    desc="this works blbl lorem ipsum"
+    label="branding"
+    path="/works"
+/>
+```
+
+Cards 라는 컴포넌트에서 Carditem 을 활용하는 예시 <br>
+json과 같은 파일로 데이터를 관리할 수 있을 것으로 보임 활용가능성이 무궁무진
+
+---
+### 자주 사용하는 UI 컴포넌트
+
+전반적인 사이트/앱 내에서 공통적으로 활용되는 UI는 규정하여 사용
+
+```javascript
+const STYLES = ['btn--primary', 'btn--outline'];
+  const SIZES = ['btn--meidum', 'btn--large'];
+
+export const Button = ({
+    children, 
+    type, 
+    onClick,
+    buttonStyle, 
+    buttonSize}) => {
+        const checkButtonStyle = STYLES.includes(buttonStyle)
+            ? buttonStyle
+            : STYLES[0]
+
+            const checkButtonSize = SIZES.includes(buttonSize)
+            ? buttonSize
+            : SIZES[0]
+
+            return (
+                <Link to="/sign-up" className="btn-mobile">
+                    <button className={'btn ${checkButtonStyle} ${checkButtonSize}'}
+                    onClick={onClick}
+                    type={type}
+                    >
+                        {children}
+                    </button>
+                </Link>
+            )
+    }
+```
+활용예시
+```javascript
+{button && <Button buttonStyle="btn--outline">Sign up</Button>}
+
+ <Button
+    className='btns'
+    buttonStyle='btn--primary'
+    buttonSize='btn--large'
+    onClick={console.log('hey')}
+>
+```
+
+버튼의 크기, 스타일 등을 규정하고 필요에 따라서 적절한 UI를 사용한다.
