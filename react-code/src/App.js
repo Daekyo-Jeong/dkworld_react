@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import './App.css';
-import Modal from './components/Modal';
-import RouteTest from './components/RouteTest';
-import Contents from './components/Contents';
+// import MainSection from './components/MainSection';
+// import RouteTest from './components/RouteTest';
+// import Contents from './components/Contents';
 import Navbar from './components/Navbar';
 import Home from './components/pages/Home';
 

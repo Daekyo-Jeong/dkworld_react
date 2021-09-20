@@ -2,16 +2,23 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'PT Sans', sans-serif;
-  }
+    font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+    letter-spacing: -0.05em;
+    font-weight: 900;
+}
 
-  .home,
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.home,
 .services,
 .products,
 .sign-up {
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
 }

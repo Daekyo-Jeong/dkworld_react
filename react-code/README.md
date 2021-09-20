@@ -6,6 +6,8 @@
 ## 20210907 React start
 시작 !
 
+---
+
 ## 20210915
 ### 카드형 UI component 분리
 
@@ -92,3 +94,26 @@ export const Button = ({
 ```
 
 버튼의 크기, 스타일 등을 규정하고 필요에 따라서 적절한 UI를 사용한다.
+
+<br>
+
+---
+
+## 20210920
+### Mainpage 수정 시작
+<br>
+
+MainSection.js
+```
+title 제작
+```
+
+Navbar.js 
+```
+logo 제작, menu 수정 중
+```
+
+to do
+```
+menu 수정필요
+```
