@@ -5,42 +5,23 @@ import './Cards.css';
 function Cards() {
     return (
         <div className='cards'>
-            <h1>This is my works</h1>
             <div className="cards__container">
                 <ul className="cards__items">
                     <Carditem
-                    src="images/img-9.jpeg"
-                    text="this is world "
-                    // desc="this works blbl lorem ipsum"
-                    label="branding"
-                    path="/works"
-                    />
-                    <Carditem
-                    src="images/img-9.jpeg"
-                    text="tw_rlddk__w_rdfasdasdsdflddk_w_rld"
-                    // desc="this works blbl lorem ipsum"
-                    label="branding"
-                    path="/works"
-                    />
-                </ul>
-                <ul className="cards__items">
-                    <Carditem
-                    src="images/img-9.jpeg"
-                    text="dk_w_rlddk_w_rlddk_w_lddk_w_rld"
-                    // desc="this works blbl lorem ipsum"
-                    label="branding"
-                    path="/works"
-                    />
-                    <Carditem
+                    align="cards__item leftalign"
                     src="images/dk_w_rld_logo1.jpg"
-                    text="tw_rlddk__w_rlddk_w_rld"
+                    num="01"
+                    title="dk_w_rld"
+                    
                     // desc="this works blbl lorem ipsum"
-                    label="branding"
+                    label="development"
                     path="/works"
                     />
-                     <Carditem
-                    src="images/dk_w_rld_logo1.jpg"
-                    text="tw_rlddk__w_rlddk_w_rld"
+                    <Carditem
+                    align="cards__item rightalign"
+                    src="images/dk_w_rld_logo2.jpg"
+                    num="02"
+                    title="breathe"
                     // desc="this works blbl lorem ipsum"
                     label="branding"
                     path="/works"

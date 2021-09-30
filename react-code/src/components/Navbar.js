@@ -3,11 +3,7 @@ import './Navbar.css';
 import Button from './Button'
 import {
     BrowserRouter as Router,
-    Switch,
-    Route,
     Link,
-    NavLink,
-    useParams
   } from "react-router-dom";
 
 
@@ -46,25 +42,26 @@ function Navbar() {
                 
                 {/* 클릭시 클래스명을 변경하여 CSS속성을 변경하는 토글 스위치 */}
                 <div className="nav-menu-button" onClick={handleClick}>
-                    <p className={click ? 'openmenu' : 'closedmenu'}>menu</p>
+                    <p className={click ? 'nav-menu-button--open' : 'nav-menu-button--close'}>menu</p>
                 </div>
-                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                <ul className={click ? 'nav-menu nav-menu--open' : 'nav-menu nav-menu--close'}>
                     <li className="nav-item">
-                        <Link to="/services" className="nav-links" onClick={closeMobileMenu}>
+                        <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
                             about.
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/products" className="nav-links" onClick={closeMobileMenu}>
+                        <Link to="/works" className="nav-links" onClick={closeMobileMenu}>
                             works.
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/sign-up" className="nav-links-mobile" onClick={closeMobileMenu}>
+                        <Link to="/lab" className="nav-links-mobile" onClick={closeMobileMenu}>
                             lab.
                         </Link>
                     </li>
                 </ul>
+                <div className={click ? "nav-menu-background nav-menu-background--open" : 'nav-menu-background nav-menu-background--close'}></div>
                 {/* {button && <Button buttonStyle="btn--outline">Sign up</Button>} */}
         </nav>
     )

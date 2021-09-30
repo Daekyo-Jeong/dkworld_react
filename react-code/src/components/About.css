@@ -1,0 +1,35 @@
+.about {
+    padding: 0 50px;
+}
+
+.about__introduce {
+    font-size: 3rem;
+    line-height: 5rem;
+}
+
+.about__contact {
+    margin: 100px 0;
+    font-size: 1.5rem;
+}
+
+.about__contact h2 {
+    color: rgba(0, 255, 153, 0.5);
+}
+
+@media screen and (min-width : 960px) {
+    .about {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .about__introduce {
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+
+    .about__contact {
+        margin: 100px 0;
+        font-size: 3rem;
+    }
+}

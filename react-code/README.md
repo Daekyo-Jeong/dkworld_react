@@ -117,3 +117,36 @@ to do
 ```
 menu 수정필요
 ```
+
+---
+
+## 20210930
+### Mainpage 정리 완료
+<br>
+
+MainSection.js
+```
+반응형 적용 완료
+```
+
+Navbar.js 
+```
+menu 수정 완료
+```
+
+Cards.js
+```
+기존 dk_w_rld 와 동일하게 구현 완료
+```
+
+About.js
+```
+기존 dk_w_rld 와 동일하게 구현 완료
+```
+
+to do
+```
+about, works, lab, work 세부 페이지 layout 정립 필요
+
+작업물 컨텐츠 정리필요 
+```
