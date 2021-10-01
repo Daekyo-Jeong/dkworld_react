@@ -15,7 +15,7 @@ function Cards() {
                     
                     // desc="this works blbl lorem ipsum"
                     label="development"
-                    path="/works"
+                    path="/works/00"
                     />
                     <Carditem
                     align="cards__item rightalign"
@@ -24,7 +24,7 @@ function Cards() {
                     title="breathe"
                     // desc="this works blbl lorem ipsum"
                     label="branding"
-                    path="/works"
+                    path="/works/01"
                     />
                 </ul>
             </div>

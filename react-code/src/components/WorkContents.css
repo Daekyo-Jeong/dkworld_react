@@ -1,0 +1,130 @@
+/* workintro */
+.work-intro {
+    margin:50px 0;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(120px, auto);
+    column-gap: 30px;
+    grid-row-gap: 70px;
+    grid-template-areas:
+        "info"
+        "img"
+        "statement";
+}
+
+.work-intro-info {
+    position: relative;
+    grid-area: info;
+}
+
+.work-intro-info__label {
+    color: #ff7c7c;
+    font-size: 2rem;
+}
+
+.work-intro-info__title {
+    font-size: 4rem;
+}
+
+.work-intro-info-details {
+    font-size: 1rem;
+    margin-top: 50px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    grid-row-gap: 30px;
+    grid-template-areas:
+        "date ."
+        "field client";
+}
+
+.work-intro-info-details__date {
+    grid-area: date;
+}
+
+.work-intro-info-details__field {
+    grid-area: field;
+}
+
+.work-intro-info-details__client {
+    grid-area: client;
+}
+
+.work-intro-img-wrap {
+    grid-area: img;
+}
+
+.work-intro-img {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.work-intro-statement {
+    grid-area: statement;
+    font-size: 1.8rem;
+}
+
+/* workimg */
+.work-img--oversize{
+    position: absolute;
+    left: 0;
+}
+
+.blank{
+    width: 100%;
+}
+
+.work-img--maxsize{
+    width: 100%;
+    margin: 50px 0;
+}
+
+.work-img--cardsize{
+    width: 50%;
+    margin: 50px 0;
+}
+
+.textbox--bigsize{
+    font-size: 2rem;
+}
+
+.textbox--middlesize{
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width:960px) {
+    .work-intro {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(300px, auto);
+        column-gap: 30px;
+        grid-row-gap: 50px;
+        grid-template-areas:
+            "info img"
+            ". statement";
+    }
+
+    .work-intro-info{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .work-intro-info-details{
+        position: absolute;
+        bottom: 0;
+    }
+    /* imgbox */
+    .blank{
+        margin-bottom: 1280px;
+    }
+
+    /* textbox */
+    .textbox--bigsize{
+        font-size: 3.5rem;
+    }
+
+    .textbox--middlesize{
+        font-size: 2rem;
+    }
+}

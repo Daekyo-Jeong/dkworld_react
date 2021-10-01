@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import './Navbar.css';
-import Button from './Button'
 import {
     BrowserRouter as Router,
     Link,

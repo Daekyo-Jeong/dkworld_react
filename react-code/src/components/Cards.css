@@ -1,6 +1,4 @@
   .cards {
-      max-width: 1200px;
-      margin: 0 auto;
   }
 
   .cards__item {
@@ -42,8 +40,6 @@
   .cards__item__text {
       font-size: 1.2rem;
   }
-
-  .card__item__pic-wrap {}
 
   .cards__item__pic-wrap:before {
       position: absolute;

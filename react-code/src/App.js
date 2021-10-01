@@ -1,10 +1,12 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 // import MainSection from './components/MainSection';
 // import RouteTest from './components/RouteTest';
 // import Contents from './components/Contents';
 import Navbar from './components/Navbar';
 import Home from './components/pages/Home';
+import Works from './components/pages/Works';
+import Work01 from './components/pages/Works/Work01';
 
 import {
   BrowserRouter as Router,
@@ -22,7 +24,11 @@ function App() {
     <Router>
       <Navbar></Navbar>
       <Switch>
-        <Route path="/" exact component={Home}></Route>
+        <div className="container">
+          <Route path="/" exact component={Home}></Route>
+          <Route path="/works" exact component={Works}></Route>
+          <Route path="/works/00" exact component={Work01}></Route>
+        </div>
       </Switch>
     </Router>
       {/* <nav className="nav">

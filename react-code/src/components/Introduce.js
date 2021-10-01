@@ -1,10 +1,10 @@
 import React from 'react'
-import './About.css';
+import './Introduce.css';
 
-function About() {
+function Introduce() {
     return (
-        <div className="about">
-          <p className="about__introduce">
+        <div className="introduce">
+          <p className="introduce__text">
             Hi, guys, 😁 <br />
             I'm Daekyo Jeong. <br />
             thx u for visiting my website. 🙏 <br /><br />
@@ -12,7 +12,7 @@ function About() {
             I based in Seoul. 🇰🇷<br />
             I studied interaction design. 🎨<br />
             </p>
-            <div className="about__contact">
+            <div className="introduce__contact">
                 <h2>Contact</h2>
                 <h3>dk_w_rld@naver.com</h3>
             </div>
@@ -20,4 +20,4 @@ function About() {
     )
 }
 
-export default About;
+export default Introduce;

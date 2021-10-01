@@ -1,5 +1,5 @@
 # dk_w_rld React Project
-이 프로젝트는 dk_w_rld 웹사이트를 `react` 를 이용해 구현합니다.
+이 프로젝트는 dk_w_rld 웹사이트를 `react` 를 이용해 구현합니다.
 
 <br>
 
@@ -103,19 +103,19 @@ export const Button = ({
 ### Mainpage 수정 시작
 <br>
 
-MainSection.js
+__MainSection.js__
 ```
-title 제작
-```
-
-Navbar.js 
-```
-logo 제작, menu 수정 중
+- title 제작
 ```
 
-to do
+__Navbar.js__
 ```
-menu 수정필요
+- logo 제작, menu 수정 중
+```
+
+__to do__
+```
+- menu 수정필요
 ```
 
 ---
@@ -124,29 +124,48 @@ menu 수정필요
 ### Mainpage 정리 완료
 <br>
 
-MainSection.js
+__MainSection.js__
 ```
-반응형 적용 완료
-```
-
-Navbar.js 
-```
-menu 수정 완료
+- 반응형 적용 완료
 ```
 
-Cards.js
+__Navbar.js__
 ```
-기존 dk_w_rld 와 동일하게 구현 완료
-```
-
-About.js
-```
-기존 dk_w_rld 와 동일하게 구현 완료
+- menu 수정 완료
 ```
 
-to do
+__Cards.js, About.js__
 ```
-about, works, lab, work 세부 페이지 layout 정립 필요
+- 기존 dk_w_rld 와 동일하게 구현 완료
+```
 
-작업물 컨텐츠 정리필요 
+__to do__
+```
+- about, works, lab, work 세부 페이지 layout 정립 필요
+
+- 작업물 컨텐츠 정리필요 
+```
+
+---
+
+## 20211001
+### Work content page
+<br>
+
+__Workintro.js, ImageBox.js, TextBox.js__
+```
+- 재사용 가능하도록 각종 UI 컴포넌트로 분리
+```
+__to do__
+```
+- about, works, lab
+
+- 작업물 컨텐츠 정리필요 
+
+- 링크 이동 시 화면이 상단으로 이동하도록 수정 필요
+: 현재는 해당 스크롤 위치에 머물러 있음
+
+- work-img--oversize 마진 수정 필요
+: 자동으로 blank가 oversize 이미지 높이에 맞추어 마진이 조정될 수 있도록
+: 혹은 absolute를 사용하지 않고 오버 사이즈가 가능한지
 ```
