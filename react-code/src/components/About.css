@@ -1,0 +1,64 @@
+.about-greeting {
+    font-size: 3rem;
+    margin-bottom: 150px;
+}
+
+.outline-text {
+    color: #fff9f9;
+    text-shadow:
+        -1.5px -1.5px 0 #000,
+        1.5px -1.5px 0 #000,
+        -1.5px 1.5px 0 #000,
+        1.5px 1.5px 0 #000;
+}
+
+.bold-text{
+    font-weight: 500;
+}
+
+.about-greeting--en {
+    display: none;
+}
+
+.about-introduce{
+    margin-bottom: 100px;
+}
+
+.about-introduce p{
+    font-weight: 300;
+}
+
+.table{
+    margin-bottom: 50px;
+    padding: 10px 0;
+}
+
+.table-title{
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.table-grid{
+    display: grid;
+    max-width: 700px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+}
+
+.table-date{
+    font-weight: 500;
+}
+
+.table-desc{
+    font-weight: 500;
+    grid-column: 2/4;
+}
+
+@media screen and (min-width : 960px) {
+    .about-greeting {
+        font-size: 5rem;
+    }
+    .table-desc{
+        font-weight: 500;
+    }
+}

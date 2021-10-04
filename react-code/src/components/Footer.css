@@ -1,0 +1,13 @@
+.footer{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, auto);
+    position: fixed;
+    bottom: 0;
+    padding: 30px;
+    font-size: 0.8rem;
+}
+
+.footer__right{
+    text-align: right;
+}

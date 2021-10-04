@@ -9,7 +9,7 @@
     transform: translate(-50%, -50%);
     top: 48%;
     left: 50%;
-    font-size: 6.5rem;
+    font-size: 5.5rem;
     color: #000;
 }
 
@@ -54,7 +54,6 @@
     }
 
     100% {
-        font-size: 110%;
         text-shadow: #ff7c7c 0 0 25px;
     }
 }
