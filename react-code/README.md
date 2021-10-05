@@ -6,10 +6,56 @@
 <br>
 
 ---
+## 20211005
+### Works page
+<br>
 
+__All__
+```
+- 모든페이지에서 글씨 크기가 일정하게 적용될 수 있도록 수정
+
+html{
+    font-size: 10px;
+}
+```
+
+__Work content page__
+```
+- 일부파일 파일명 변경
+: 범용적이지 않은 컴포넌트의 이름을 세분화하였음
+    TextBox.js -> WorkTextBox.js
+    ImageBox.js -> WorkImageBox.js
+```
+
+__Works.js, GridCard.js__
+```
+- Works page 를 위해서 GridCard를 생성
+: 현재는 grid 방식으로 정렬되어 있지만, 추후 변경소지 있음
+: Lab page를 제작할 때 grid 방식으로 정렬 고려 중
+```
+
+__to do__
+```
+- lab page
+
+- 작업물 컨텐츠 정리필요 
+
+- work-img--oversize 실시간 동적으로 변경 가능할지 연구
+- infinite scroll(looping)
+- 
+```
+
+<br>
+
+---
 ## 20211004
 ### About page
 <br>
+
+__All__
+```
+index.html에 폰트(300,500,800) 추가
+```
 
 __ScrollToTop.js__
 ```

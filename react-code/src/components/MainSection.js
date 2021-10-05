@@ -1,12 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './MainSection.css';
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  NavLink,
-  useParams
+  Link
 } from "react-router-dom";
 
 function MainSection(){

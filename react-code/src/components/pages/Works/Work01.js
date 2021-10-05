@@ -1,7 +1,7 @@
 import React from 'react'
 import WorkIntro from '../../WorkIntro';
-import ImageBox from '../../ImageBox';
-import TextBox from '../../TextBox';
+import WorkImageBox from '../../WorkImageBox';
+import WorkTextBox from '../../WorkTextBox';
 import '../../WorkContents.css';
 
 function Work01() {
@@ -21,36 +21,36 @@ function Work01() {
                 eaque impedit nemo, at aspernatur ducimus sed omnis amet
                 vero saepe illo, provident in?"
             ></WorkIntro>
-            <ImageBox
+            <WorkImageBox
             size="over"
             src="../../images/img-9.jpeg"
-            ></ImageBox>
-            <TextBox
+            ></WorkImageBox>
+            <WorkTextBox
             size="big"
             desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             Nulla quibusdam officia autem sequi, nihil voluptate animi 
             eaque impedit nemo, at aspernatur ducimus sed omnis amet
             vero saepe illo, provident in?"
-            ></TextBox>
-            <ImageBox
+            ></WorkTextBox>
+            <WorkImageBox
             size="max"
             src="../../images/img-9.jpeg"
-            ></ImageBox>
-            <TextBox
+            ></WorkImageBox>
+            <WorkTextBox
             size="md"
             desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             Nulla quibusdam officia autem sequi, nihil voluptate animi 
             eaque impedit nemo, at aspernatur ducimus sed omnis amet
             vero saepe illo, provident in?"
-            ></TextBox>
-            <ImageBox
+            ></WorkTextBox>
+            <WorkImageBox
             size="card"
             src="../../images/img-9.jpeg"
-            ></ImageBox>
-             <ImageBox
+            ></WorkImageBox>
+             <WorkImageBox
             size="card"
             src="../../images/img-9.jpeg"
-            ></ImageBox>
+            ></WorkImageBox>
         </>
     )
 }

@@ -1,6 +1,6 @@
 /* workintro */
 .work-intro {
-    margin:50px 0;
+    margin: 50px 0;
     height: auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -28,7 +28,7 @@
 }
 
 .work-intro-info-details {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-top: 50px;
     display: grid;
     width: 100%;
@@ -62,7 +62,7 @@
 
 .work-intro-statement {
     grid-area: statement;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
 }
 
 /* workimg */
@@ -86,11 +86,11 @@
 }
 
 .textbox--bigsize{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .textbox--middlesize{
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 @media screen and (min-width:960px) {
@@ -121,10 +121,10 @@
 
     /* textbox */
     .textbox--bigsize{
-        font-size: 3.5rem;
+        font-size: 5rem;
     }
 
     .textbox--middlesize{
-        font-size: 2rem;
+        font-size: 3rem;
     }
 }

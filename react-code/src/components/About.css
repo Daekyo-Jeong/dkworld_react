@@ -1,6 +1,13 @@
 .about-greeting {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 150px;
+}
+.about-greeting__dd--virtical--ko{
+    display: block;
+}
+
+.about-greeting__dd--ko{
+    display: none;
 }
 
 .outline-text {
@@ -55,10 +62,33 @@
 }
 
 @media screen and (min-width : 960px) {
-    .about-greeting {
-        font-size: 5rem;
-    }
     .table-desc{
         font-weight: 500;
+    }
+}
+
+@media screen and (min-width : 1024px){
+    .about-greeting {
+        font-size: 8rem;
+    }
+
+    .about-greeting__dd--virtical--ko{
+        display: none;
+    }
+    
+    .about-greeting__dd--ko{
+        display: block;
+    }
+
+    .about-introduce{
+        font-size: 2rem;
+    }
+
+    .about-table{
+        font-size: 1.5rem;
+    }
+
+    .table-title{
+        font-size: 1.5rem;
     }
 }

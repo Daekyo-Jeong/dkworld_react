@@ -26,7 +26,7 @@ function WorkIntro(props) {
             </div>
             <div className="work-intro-img-wrap">
                 <figure>
-                    <img className="work-intro-img" src={props.src} alt="Works Main Image"/>
+                    <img className="work-intro-img" src={props.src} alt={props.title}/>
                 </figure>
             </div>
             <div className="work-intro-statement">

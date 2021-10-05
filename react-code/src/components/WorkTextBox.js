@@ -5,7 +5,7 @@ const SIZES = {
     md: 'textbox--middlesize',
 };
 
-function TextBox({desc, size}) {
+function WorkTextBox({desc, size}) {
     const textSize = SIZES[size];
 
     return (
@@ -15,4 +15,4 @@ function TextBox({desc, size}) {
     )
 }
 
-export default TextBox;
+export default WorkTextBox;

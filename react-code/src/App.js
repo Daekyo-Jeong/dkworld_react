@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import './App.css';
 // import MainSection from './components/MainSection';
 // import RouteTest from './components/RouteTest';
@@ -15,10 +15,10 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  NavLink,
-  useParams,
-  withRouter
+  // Link,
+  // NavLink,
+  // useParams,
+  // withRouter
 } from "react-router-dom";
 
 

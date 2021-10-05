@@ -8,7 +8,7 @@ const SIZES = {
 
 var imgbox = null;
 
-function ImageBox({src, size}) {
+function WorkImageBox({src, size}) {
     const imgSize = SIZES[size];
     const workImgBox = useRef(null);
 
@@ -30,6 +30,15 @@ function ImageBox({src, size}) {
 
     const resizeBlankbox = () => {
         console.log("hello world");
+        if(window.innerWidth <= 960){
+            blanksize = {
+                marginBottom : (window.innerWidth*9)/16 + 180
+            };
+        } else if (window.innerWidth > 960){
+            blanksize = {
+                marginBottom : (window.innerWidth*9)/16 + 270
+            };
+        }
     }
 
     window.addEventListener('resize', resizeBlankbox);
@@ -53,4 +62,4 @@ function ImageBox({src, size}) {
     )
 }
 
-export default ImageBox;
+export default WorkImageBox;
