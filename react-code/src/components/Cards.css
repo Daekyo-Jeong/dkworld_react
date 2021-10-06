@@ -54,7 +54,7 @@
   @media screen and (min-width : 960px) {
       .cards__item {
         grid-template-columns: repeat(2, 1fr);
-          column-gap: 30px;
+        column-gap: 30px;
       }
 
       .leftalign {
@@ -74,14 +74,15 @@
           display: flex;
           justify-content: center;
           flex-direction: column;
+          padding: 0 30px;
       }
 
       .cards__item__num {
           color: #ff7c7c;
-          font-size: 2rem;
+          font-size: 3rem;
       }
 
       .cards__item__title {
-          font-size: 4rem;
+          font-size: 6rem;
       }
   }

@@ -1,4 +1,5 @@
-import React, {useEffect, useRef} from 'react'
+import React, {useEffect, useState} from 'react'
+import { debounce } from 'lodash';
 
 const SIZES = {
     over: 'work-img--oversize',
@@ -10,48 +11,57 @@ var imgbox = null;
 
 function WorkImageBox({src, size}) {
     const imgSize = SIZES[size];
-    const workImgBox = useRef(null);
-
     var blanksize = {};
 
     if(window.innerWidth <= 960){
         blanksize = {
-            marginBottom : (window.innerWidth*9)/16 + 180
+            height : (window.innerWidth*9)/16 + 50
         };
+        
     } else if (window.innerWidth > 960){
         blanksize = {
-            marginBottom : (window.innerWidth*9)/16 + 270
+            height : (window.innerWidth*9)/16 + 170
         };
     }
 
-    useEffect(() => {
-        console.log(window.innerWidth);
-    })
+    const [blank, setBlank] = useState(blanksize);
 
-    const resizeBlankbox = () => {
-        console.log("hello world");
+    //실시간으로 화면 변경될 때 마다 사이즈 변경하는 것으로 했더니 과부화 걸림
+    //너무 잦은 반복으로 화면을 렌더링 해서 그런 듯
+    //resizeBlankbox 함수를 debounce로 감싸고, 1000ms 동안 반복되지 않도록 설정
+    //가장 마지막에 실행된 동일한 함수만을 적용한다.
+    const resizeBlankbox = debounce(() => {
+        console.log(blanksize.marginBottom);
         if(window.innerWidth <= 960){
             blanksize = {
-                marginBottom : (window.innerWidth*9)/16 + 180
+                height : (window.innerWidth*9)/16+50
             };
+            setBlank(blanksize);
         } else if (window.innerWidth > 960){
             blanksize = {
-                marginBottom : (window.innerWidth*9)/16 + 270
+                height : (window.innerWidth*9)/16+170
             };
+            setBlank(blanksize);
         }
-    }
+    }, 500);
+    
+    useEffect(()=> {
+        window.addEventListener('resize', resizeBlankbox);
+        return() => {
+            window.removeEventListener('resize', resizeBlankbox);
+        }
+    }, []);
 
-    window.addEventListener('resize', resizeBlankbox);
 
     if(size==='over'){
         imgbox = 
         <>
-        <img ref={workImgBox} className={imgSize} src={src} alt="Work Image" width={window.innerWidth}/>
-        <div className="blank" style={blanksize}></div>
+        <img className={imgSize} src={src} alt="Work"/>
+        <div className="blank" style={blank}></div>
         </>
 
     } else if(size==='max' || 'card') {
-        imgbox = <img ref={workImgBox} className={imgSize} src={src} alt="Work Image" />
+        imgbox = <img className={imgSize} src={src} alt="Work" />
     } else {
         imgbox = null;
     }

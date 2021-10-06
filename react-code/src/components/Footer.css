@@ -10,4 +10,20 @@
 
 .footer__right{
     text-align: right;
+    cursor: pointer;
+}
+
+.footer__right__button:before{
+    content: '';
+    position: absolute;
+    margin-top:7px ;
+    width: 0px;
+    height: 10px;
+    background: rgba(0, 255, 153, 0.5);
+    transition: ease 0.5s;
+    z-index: -1;
+}
+
+.footer__right__button:hover::before{
+    width: 32px;
 }

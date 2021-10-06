@@ -3,6 +3,10 @@
     line-height: 5rem;
 }
 
+.introduce__text__link{
+    text-decoration: 5px rgba(0, 255, 153, 0.5) underline;
+}
+
 .introduce__contact {
     margin: 100px 0;
     font-size: 1.5rem;

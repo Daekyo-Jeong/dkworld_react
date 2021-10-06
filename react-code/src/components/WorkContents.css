@@ -68,11 +68,13 @@
 /* workimg */
 .work-img--oversize{
     position: absolute;
+    width: 100%;
     left: 0;
 }
 
 .blank{
     width: 100%;
+    margin-bottom: 50px;
 }
 
 .work-img--maxsize{
@@ -116,7 +118,7 @@
     }
     /* imgbox */
     .blank{
-        margin-bottom: 1280px;
+        
     }
 
     /* textbox */

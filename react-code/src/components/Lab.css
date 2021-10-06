@@ -1,0 +1,25 @@
+.lab-title{
+    font-size: 10rem;
+}
+
+.lab-introduce{
+    font-size: 2rem;
+}
+
+.lab-info{
+    margin-bottom: 70px;
+    padding-bottom: 50px;
+}
+
+.lab-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+}
+
+@media screen and (min-width:960px ) {
+    .lab-grid{
+        grid-template-columns: repeat(4, 1fr);
+    }    
+}

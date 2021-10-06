@@ -10,7 +10,12 @@ function WorkTextBox({desc, size}) {
 
     return (
         <>
-        <p className={textSize}>{desc}</p>
+        <p className={textSize}>{desc.split("\n").map((txt)=>(
+            <>
+                {txt}
+                <br />
+            </>
+        ))}</p>
         </>
     )
 }

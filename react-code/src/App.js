@@ -1,15 +1,13 @@
 import React from 'react';
 import './App.css';
-// import MainSection from './components/MainSection';
-// import RouteTest from './components/RouteTest';
-// import Contents from './components/Contents';
+import ScrollToTop from './components/ScrollToTop';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './components/pages/Home';
 import Works from './components/pages/Works';
 import Work01 from './components/pages/Works/Work01';
 import About from './components/pages/About';
-import ScrollToTop from './components/ScrollToTop';
+import Lab from './components/pages/Lab';
 
 import {
   BrowserRouter as Router,
@@ -31,13 +29,14 @@ function App() {
       <Navbar></Navbar>
       <Switch>
         <div className="container">
-          <Route path="/" exact component={Home}></Route>
-          <Route path="/works" exact component={Works}></Route>
-          <Route path="/works/00" exact component={Work01}></Route>
-          <Route path="/about" exact component={About}></Route>
+          <Route path="/" exact component={Home} />
+          <Route path="/works" exact component={Works} />
+          <Route path="/works/00" exact component={Work01}/>
+          <Route path="/about" exact component={About} />
+          <Route path="/lab" exact component={Lab} />
         </div>
       </Switch>
-      <Footer></Footer>
+      <Footer />
       </ScrollToTop>
     </Router>
       {/* <nav className="nav">

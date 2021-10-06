@@ -1,7 +1,6 @@
 import React from 'react';
 import './MainSection.css';
 import {
-  BrowserRouter as Router,
   Link
 } from "react-router-dom";
 

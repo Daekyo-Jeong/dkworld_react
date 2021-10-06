@@ -2,10 +2,62 @@
 이 프로젝트는 dk_w_rld 웹사이트를 `react` 를 이용해 구현합니다.
 <br>
 아래 내용은 타임라인에 따른 `pathnote` 입니다.
-
 <br>
 
 ---
+## 20211006
+### Upload dk react
+<br>
+
+__All__
+```
+- react로 만든 dk를 daekyojeong.com에 업로드
+: 1. npm run bulid 로 빌드
+: 2. index.html 에서 파일 경로 ="/" 을 ="./"로 변경하여야 정상적으로 작동
+
+- 불필요하는 에러 유발 요소들 제거
+```
+
+__Navbar.js__
+```
+- 불필요한 요소 삭제
+```
+
+__Introduce.js__
+```
+- 이름에 <Link> 추가
+: about으로 연결될 수 있도록
+```
+
+__Footer.js__
+```
+- 언어변경 버튼 시도
+: 전체 css를 조정할 수 있는 방법 모색 필요
+: 리액트에서는 권장하지 않는 방법(?)
+```
+
+__Work content page__
+```
+- imagebox.js work-img--oversize 하단 마진 실시간으로 수정
+: debounce, useState 를 활용하여서 작성함
+
+- textbox.js \n 구분점 추가
+```
+
+__Lab.js__
+```
+- 시약장 컨셉으로 제작 중 
+: GridCardItem 활용
+```
+
+__to do__
+```
+- work, lab page 에 들어갈 컨텐츠 필요
+- works list infinate scroll 적용 연구
+- 언어 변경토글 구현해보기
+```
+
+
 ## 20211005
 ### Works page
 <br>
