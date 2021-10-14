@@ -4,7 +4,7 @@
 
 .grid-card-item:hover .grid-card-item__img-wrap{
     transform: translate(0, -5px);
-    box-shadow: 1px 1px 60px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
 }
 
 .grid-card-item__info{
@@ -16,7 +16,6 @@
 }
 
 .grid-card-item__img-wrap{
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
     transition: ease .5s;
 }
 
@@ -28,7 +27,6 @@
     max-width: calc((100%) - 60px);
     color: #fff;
     background-color: #ff7c7c;
-    box-sizing: border-box;
 }
 
 @media screen and (min-width:1024px) {

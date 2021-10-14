@@ -65,34 +65,49 @@
     font-size: 2.5rem;
 }
 
+.work-intro-statement p{
+    letter-spacing: 0rem;
+}
+
 /* workimg */
+
 .work-img--oversize{
-    position: absolute;
-    width: 100%;
-    left: 0;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
 }
 
 .blank{
-    width: 100%;
     margin-bottom: 50px;
 }
 
 .work-img--maxsize{
     width: 100%;
-    margin: 50px 0;
+    margin: 30px 0;
+}
+
+.work-img--cardsize--wrap{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    margin: 30px 0;
 }
 
 .work-img--cardsize{
-    width: 50%;
-    margin: 50px 0;
+    height: 100%;
+    object-fit: cover;
 }
 
 .textbox--bigsize{
     font-size: 3rem;
+    letter-spacing: 0rem;
+    margin: 30px 0;
 }
 
 .textbox--middlesize{
     font-size: 2rem;
+    letter-spacing: 0rem;
+    margin: 30px 0;
 }
 
 @media screen and (min-width:960px) {
@@ -124,9 +139,11 @@
     /* textbox */
     .textbox--bigsize{
         font-size: 5rem;
+        margin: 50px 0;
     }
 
     .textbox--middlesize{
         font-size: 3rem;
+        margin: 50px 0;
     }
 }

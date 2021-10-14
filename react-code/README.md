@@ -5,6 +5,47 @@
 <br>
 
 ---
+## 20211012 - 20211014
+### pathnote
+<br>
+
+__nav__
+```
+- background를 클릭해도 메뉴가 감춰질 수 있도록 수정
+```
+
+__MainSection__
+```
+- 마우스 호버 효과를 애니메이션 효과로 수정
+: 보다 동적인 웹사이트 대문
+: 애니메이션 반복 간격 조정
+- 마우스 호버 시 동적 효과 없이 즉시 활성화
+```
+
+__Footer__
+```css
+- footer_right: style-display: block
+```
+
+__Works page__
+```css
+- work-img--oversize 높이 자동조절하도록 수정
+: 스크립트 없이 css 속성으로 적용함
+
+.work-img--oversize{
+    /* 부모 요소의 너비를 무시하고 화면의 너비로 고정 */
+    width: 100vw;
+    /* 화면의 왼쪽에서 시작될 수 있도록 수정 */
+    margin-left: calc(-50vw + 50%);
+}
+
+- WorkImageBoxGrid.js 추가
+: grid가 적용된 컴포넌트와 분리하여 작성
+```
+
+<br>
+
+---
 ## 20211006
 ### Upload dk react
 <br>
@@ -57,7 +98,7 @@ __to do__
 - 언어 변경토글 구현해보기
 ```
 
-
+---
 ## 20211005
 ### Works page
 <br>

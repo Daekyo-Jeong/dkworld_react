@@ -6,12 +6,12 @@ function Introduce() {
     return (
         <div className="introduce">
           <p className="introduce__text">
-            Hi, guys, 😁 <br />
-            I'm <Link to="/about" className="introduce__text__link">Daekyo Jeong. </Link><br />
-            thx u for visiting my website. 🙏 <br /><br />
+            안녕하세요. 😁 <br />
+            <Link to="/about" className="introduce__text__link">정대교입니다. </Link><br />
+            제 웹사이트를 방문해주셔서 감사합니다. 🙏 <br /><br />
 
-            I based in Seoul. 🇰🇷<br />
-            I studied interaction design. 🎨<br />
+            저는 서울에 거주 중입니다. 🇰🇷<br />
+            인터랙션 디자인에 대해서 공부하고 있습니다. 🎨<br />
             </p>
             <div className="introduce__contact">
                 <h2>Contact</h2>

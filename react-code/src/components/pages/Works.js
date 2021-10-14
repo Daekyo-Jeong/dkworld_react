@@ -12,57 +12,57 @@ const worksList = [
     },
     {
         id: 2,
-        title: 'helloworld',
+        title: 'Breathe',
         path: '/works/01',
         label: 'branding',
-        src: 'images/dk_w_rld_logo2.jpg'
+        src: 'images/works_images/breathe.jpg'
     },
     {
         id: 3,
-        title: 'reactmap',
+        title: 'Food a Cappella',
         path: '/works/02',
-        label: 'UX/UI',
+        label: 'artwork',
         src: 'images/dk_w_rld_logo3.jpg'
     },
     {
         id: 4,
-        title: 'sometitle',
+        title: 'LIMA Olympic',
         path: '/works/03',
-        label: 'artwork',
+        label: 'branding',
         src: 'images/dk_w_rld_logo4.jpg'
     },
     {
         id: 5,
-        title: 'kimchijjigea',
+        title: 'Universe',
         path: '/works/04',
-        label: 'boardgame',
+        label: 'artwork',
         src: 'images/dk_w_rld_logo5.jpg'
     },
     {
         id: 6,
-        title: 'agricola',
+        title: 'Neon',
         path: '/works/05',
-        label: 'boardgame',
+        label: 'artwork',
         src: 'images/dk_w_rld_logo6.jpg'
     },
     {
         id: 7,
-        title: 'spacecrew',
+        title: 'Salt Factory',
         path: '/works/06',
-        label: 'boardgame',
+        label: 'media art',
         src: 'images/dk_w_rld_logo7.jpg'
     },
     {
         id: 8,
-        title: 'burgendy',
-        path: '/works/06',
-        label: 'boardgame',
+        title: 'Moonecklace',
+        path: '/works/07',
+        label: 'artwork',
         src: 'images/dk_w_rld_logo8.jpg'
     },
     {
         id: 9,
         title: 'Fiit',
-        path: '/works/06',
+        path: '/works/08',
         label: 'boardgame',
         src: 'images/dk_w_rld_logo9.jpg'
     }

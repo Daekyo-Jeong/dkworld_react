@@ -13,7 +13,7 @@ function MainSection(){
         <span className="main-title__o">o</span>
       </h1>
       <div className="main-guide">
-        <Link to="/">more info</Link>
+        {/* <a href="/">more info</a> */}
       </div>
     </div>
     </>

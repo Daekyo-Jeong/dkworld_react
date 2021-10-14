@@ -13,44 +13,55 @@ function Work01() {
                 date="2021.09 - ing"
                 field1="Web development"
                 field2="UX/UI design"
-                field3=""
-                client1="Self"
+                field3="Branding"
+                client1="React"
+                client2="html/css/js"
+                client3="Photoshop"
                 src="../../images/dk_w_rld_logo1.jpg"
-                statement="Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Nulla quibusdam officia autem sequi, nihil voluptate animi 
-                eaque impedit nemo, at aspernatur ducimus sed omnis amet
-                vero saepe illo, provident in?"
+                statement="개인 작업물 아카이브를 목적으로 진행된 웹 개발 프로젝트. 효과적으로
+                작품과 '나' 라는 사람을 전달할 수 있도록 퍼스널 브랜딩을 겸하여
+                웹사이트에 아이덴티티를 부여했다. React를 활용해서 추후 작업물을 업데이트하고,
+                관리할 수 있도록 UI를 컴포넌트화 하여 유지보수에 도움될 수 있도록 작업했다."
             ></WorkIntro>
             <WorkImageBox
             size="over"
-            src="../../images/img-9.jpeg"
+            src="dk_w_rld/dk_w_rld-logo-animation.gif"
             ></WorkImageBox>
             <WorkTextBox
             size="big"
-            desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Nulla quibusdam officia autem sequi, nihil voluptate animi 
-            eaque impedit nemo, at aspernatur ducimus sed omnis amet
-            vero saepe illo, provident in?"
+            desc="홈페이지에서 만나볼 수 있는 로고이자, 웹사이트의 이름. 
+            단순하게 텍스트로 이루어진 로고이지만, 애니메이션 효과로 아이덴티티를 담고 있다."
             ></WorkTextBox>
             <WorkImageBox
             size="max"
-            src="../../images/img-9.jpeg"
+            src="dk_w_rld/dk-identity.jpg"
             ></WorkImageBox>
             <WorkTextBox
             size="md"
-            desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Nulla quibusdam officia autem sequi, nihil voluptate animi 
-            eaque impedit nemo, at aspernatur ducimus sed omnis amet
-            vero saepe illo, provident in?"
+            desc={
+                "나는 호기심이 많아, 궁금한 것에 대한 집요한 관심을 보인다. \n 정돈된 코드와 문서화된 규정을 좋아하면서도 개성있는 디자인과 자유로움을 추구한다."
+            }
             ></WorkTextBox>
             <WorkImageBox
-            size="card"
-            src="../../images/img-9.jpeg"
+            size="over"
+            src="dk_w_rld/dk-type-color-system.jpg"
             ></WorkImageBox>
-             <WorkImageBox
-            size="card"
-            src="../../images/img-9.jpeg"
+            <WorkTextBox
+            size="md"
+            desc="웹사이트 전반에 '기호'를 사용하지 않고, 정제된 글과 색으로만 구성되도록 디자인하였다. 
+            겉으로 보기에 따분하고 정돈된 웹사이트 처럼 보이지만, 강렬한 형광색 컬러의 동적인 효과들로 
+            내면의 숨겨진 개성을 담고자했다."
+            ></WorkTextBox>
+            <WorkImageBox
+            size="max"
+            src="dk_w_rld/dk-architecture.jpg"
             ></WorkImageBox>
+            <WorkTextBox
+            size="md"
+            desc="페이지간 이동은 네비게이션을 통해서 이동이 가능하고, 
+            방문자의 관심도에 따라, 홈 화면에서 해당하는 페이지로 이동이 가능하도록 설계되었다."
+            ></WorkTextBox>
+
         </>
     )
 }

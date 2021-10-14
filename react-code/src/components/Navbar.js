@@ -59,7 +59,7 @@ function Navbar() {
                         </Link>
                     </li>
                 </ul>
-                <div className={click ? "nav-menu-background nav-menu-background--open" : 'nav-menu-background nav-menu-background--close'}></div>
+                <div onClick={closeMobileMenu} className={click ? "nav-menu-background nav-menu-background--open" : 'nav-menu-background nav-menu-background--close'}></div>
                 {/* {button && <Button buttonStyle="btn--outline">Sign up</Button>} */}
         </nav>
     )

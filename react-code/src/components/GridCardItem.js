@@ -14,7 +14,6 @@ function GridCardItem({title, path, label, src}) {
                     <img src={src} alt={title} className="grid-card-item-img" />
                 </figure>
                 </Link>
-                
             </li> 
         </>
     )
