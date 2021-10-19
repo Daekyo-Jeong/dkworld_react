@@ -9,6 +9,7 @@ import Work01 from './components/pages/Works/Work01';
 import Work02 from './components/pages/Works/Work02';
 import About from './components/pages/About';
 import Lab from './components/pages/Lab';
+import Lab01 from './components/pages/Labs/Labs01';
 
 import {
   BrowserRouter as Router,
@@ -36,6 +37,7 @@ function App() {
           <Route path="/works/01" exact component={Work02}/>
           <Route path="/about" exact component={About} />
           <Route path="/lab" exact component={Lab} />
+          <Route path="/lab/00" exact component={Lab01} />
         </div>
       </Switch>
       <Footer />

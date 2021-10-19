@@ -5,9 +5,9 @@ import GridCardItem from '../GridCardItem';
 const LabList = [
     {
         id: 1,
-        title: 'dk_w_rld',
+        title: 'Image Slider',
         path: '/lab/00',
-        label: 'development',
+        label: 'react',
         src: 'images/dk_w_rld_logo1.jpg'
     },
     {

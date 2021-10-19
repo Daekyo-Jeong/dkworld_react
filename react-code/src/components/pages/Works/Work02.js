@@ -3,7 +3,31 @@ import WorkIntro from '../../WorkIntro';
 import WorkImageBox from '../../WorkImageBox';
 import WorkImageBoxGrid from '../../WorkImageBoxGrid';
 import WorkTextBox from '../../WorkTextBox';
+import ImageSlider from '../../ImageSlider';
 import '../../WorkContents.css';
+
+const slideImageList1 = [
+    {
+        id: "1",
+        src:"../../images/works_images/breathe/breathe-poster.png"
+    },
+    {
+        id: "2",
+        src:"../../images/works_images/breathe/breathe-banner.png"
+    },
+    {
+        id: "3",
+        src:"../../images/works_images/breathe/artbook.jpg"
+    },
+    {
+        id: "4",
+        src:"../../images/works_images/breathe/exhibition1.jpg"
+    },
+    {
+        id: "5",
+        src:"../../images/works_images/breathe/10.jpg"
+    }
+];
 
 function Work02() {
     return (
@@ -52,28 +76,17 @@ function Work02() {
             />
             <WorkTextBox
             size="md"
-            desc={"숨이라 함은 흩날리고 불어지는 이미지가 떠오르기 마련입니다. 부드럽게 흔들리는 이미지와 반대로 전공의 대표 특징인 디지털은 곧고 빠릅니다. 우리는 이 상충하는 두 이미지를 모두 연상시킬 수 있는 심볼을 만드는 것에 집중했습니다. \n\n 디지털을 대표하는 대쉬와 닷, 숨결을 상징하는 바람 그리고 전시 네이밍의 이니셜. 이 요소들을 가지고 위와 같은 로고 심볼과 이를 응용한 로고 타입을 만들었습니다."
+            desc={`숨이라 함은 흩날리고 불어지는 이미지가 떠오르기 마련입니다. 
+            부드럽게 흔들리는 이미지와 반대로 전공의 대표 특징인 디지털은 곧고 빠릅니다. 
+            우리는 이 상충하는 두 이미지를 모두 연상시킬 수 있는 심볼을 만드는 것에 집중했습니다. \n\n 
+            디지털을 대표하는 대쉬와 닷, 숨결을 상징하는 바람 그리고 전시 네이밍의 이니셜. 
+            이 요소들을 가지고 위와 같은 로고 심볼과 이를 응용한 로고 타입을 만들었습니다.`
             }
             />
-            <WorkImageBox
-            size="over"
-            src="breathe/breathe-poster.png"
-            />
+            <ImageSlider list="5" img={slideImageList1}/>
             <WorkTextBox
             size="md"
             desc="포스터, 배너, 도록 등 모든 어플리케이션에는 브랜드 아이덴티티가 일관되게 적용됩니다."
-            />
-            <WorkImageBox
-            size="max"
-            src="breathe/10.jpg"
-            />
-            <WorkImageBox
-            size="over"
-            src="breathe/breathe-banner.png"
-            />
-            <WorkImageBoxGrid
-            src1="breathe/exhibition1.jpg"
-            src2="breathe/artbook.jpg"
             />
             <WorkImageBox
             size="max"

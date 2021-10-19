@@ -2,6 +2,7 @@ import React from 'react'
 import WorkIntro from '../../WorkIntro';
 import WorkImageBox from '../../WorkImageBox';
 import WorkTextBox from '../../WorkTextBox';
+
 import '../../WorkContents.css';
 
 function Work01() {
@@ -61,7 +62,6 @@ function Work01() {
             desc="페이지간 이동은 네비게이션을 통해서 이동이 가능하고, 
             방문자의 관심도에 따라, 홈 화면에서 해당하는 페이지로 이동이 가능하도록 설계되었다."
             ></WorkTextBox>
-
         </>
     )
 }
