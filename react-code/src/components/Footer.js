@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Footer.css';
 
-function toggleTranslateLanguege(event){
+// function toggleTranslateLanguege(event){
     
-}
+// }
 
 function Footer() {
     var koreanLang = document.getElementsByClassName('--ko');

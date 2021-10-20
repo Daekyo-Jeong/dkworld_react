@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 // import { debounce } from 'lodash';
 
 var defaultFolder = '../../images/works_images/';

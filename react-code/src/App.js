@@ -7,9 +7,14 @@ import Home from './components/pages/Home';
 import Works from './components/pages/Works';
 import Work01 from './components/pages/Works/Work01';
 import Work02 from './components/pages/Works/Work02';
+import Work03 from './components/pages/Works/Work03';
+import Work04 from './components/pages/Works/Work04';
+import Work05 from './components/pages/Works/Work05';
 import About from './components/pages/About';
 import Lab from './components/pages/Lab';
 import Lab01 from './components/pages/Labs/Labs01';
+import Lab02 from './components/pages/Labs/Labs02';
+import Lab03 from './components/pages/Labs/Labs03';
 
 import {
   BrowserRouter as Router,
@@ -30,15 +35,22 @@ function App() {
     <ScrollToTop>
       <Navbar></Navbar>
       <Switch>
+        <>
         <div className="container">
           <Route path="/" exact component={Home} />
           <Route path="/works" exact component={Works} />
-          <Route path="/works/00" exact component={Work01}/>
-          <Route path="/works/01" exact component={Work02}/>
+          <Route path="/works/01" exact component={Work01}/>
+          <Route path="/works/02" exact component={Work02}/>
+          <Route path="/works/03" exact component={Work03}/>
+          <Route path="/works/04" exact component={Work04}/>
+          <Route path="/works/05" exact component={Work05}/>
           <Route path="/about" exact component={About} />
           <Route path="/lab" exact component={Lab} />
-          <Route path="/lab/00" exact component={Lab01} />
+          <Route path="/lab/01" exact component={Lab01} />
+          <Route path="/lab/02" exact component={Lab02} />
+          <Route path="/lab/03" exact component={Lab03} />
         </div>
+        </>
       </Switch>
       <Footer />
       </ScrollToTop>

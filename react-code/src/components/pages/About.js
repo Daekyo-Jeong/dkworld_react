@@ -45,7 +45,7 @@ function About() {
             <Table 
             title="경력">
             <TableData 
-            date="20.03 - 21.01"
+            date="20.03 - 21.03"
             desc="홍익대학교 디자인컨버전스학부 실습조교"/></Table>
 
             <Table 

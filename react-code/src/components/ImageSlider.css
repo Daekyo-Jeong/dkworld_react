@@ -22,7 +22,7 @@
     background: none;
     width: 50px;
     position: absolute;
-    top: 90%;
+    top: 95%;
     transform: translateY(-50%);
     display: flex;
     justify-content: center;
@@ -41,4 +41,11 @@
 
 .image-slider__button--right{
     right:5%;
+}
+
+.image-slider__nav{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }

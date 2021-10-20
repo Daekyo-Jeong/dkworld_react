@@ -2,7 +2,7 @@ import React from 'react'
 
 const SIZES = {
     big: 'textbox--bigsize',
-    md: 'textbox--middlesize',
+    md: 'textbox--middlesize'
 };
 
 function WorkTextBox({desc, size}) {

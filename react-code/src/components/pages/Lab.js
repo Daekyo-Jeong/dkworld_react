@@ -6,67 +6,90 @@ const LabList = [
     {
         id: 1,
         title: 'Image Slider',
-        path: '/lab/00',
-        label: 'react',
-        src: 'images/dk_w_rld_logo1.jpg'
+        path: '/lab/01',
+        label: 'react-component',
+        src: 'images/dk_w_rld_logo1.jpg',
+        type:'labA'
     },
     {
         id: 2,
-        title: 'helloworld',
-        path: '/lab/01',
-        label: 'branding',
-        src: 'images/dk_w_rld_logo2.jpg'
+        title: 'videoControl',
+        path: '/lab/02',
+        label: 'react-component',
+        src: 'images/dk_w_rld_logo2.jpg',
+        type:'labB'
     },
     {
         id: 3,
-        title: 'reactmap',
-        path: '/lab/02',
-        label: 'UX/UI',
-        src: 'images/dk_w_rld_logo3.jpg'
+        title: 'languegeSwitch',
+        path: '/lab/03',
+        label: 'react-function',
+        src: 'images/dk_w_rld_logo3.jpg',
+        type:'labB'
     },
     {
         id: 4,
         title: 'sometitle',
-        path: '/lab/03',
+        path: '/lab/04',
         label: 'artwork',
-        src: 'images/dk_w_rld_logo4.jpg'
+        src: 'images/dk_w_rld_logo4.jpg',
+        type:'labB'
     },
     {
         id: 5,
         title: 'kimchijjigea',
-        path: '/lab/04',
+        path: '/lab/05',
         label: 'boardgame',
-        src: 'images/dk_w_rld_logo5.jpg'
+        src: 'images/dk_w_rld_logo5.jpg',
+        type:'labB'
     },
     {
         id: 6,
         title: 'agricola',
-        path: '/lab/05',
+        path: '/lab/06',
         label: 'boardgame',
-        src: 'images/dk_w_rld_logo6.jpg'
+        src: 'images/dk_w_rld_logo6.jpg',
+        type:'labB'
     },
     {
         id: 7,
         title: 'spacecrew',
-        path: '/lab/06',
+        path: '/lab/07',
         label: 'boardgame',
-        src: 'images/dk_w_rld_logo7.jpg'
+        src: 'images/dk_w_rld_logo7.jpg',
+        type:'labB'
     },
     {
         id: 8,
         title: 'burgendy',
-        path: '/lab/06',
+        path: '/lab/08',
         label: 'boardgame',
-        src: 'images/dk_w_rld_logo8.jpg'
+        src: 'images/dk_w_rld_logo8.jpg',
+        type:'labB'
     },
     {
         id: 9,
         title: 'Fiit',
-        path: '/lab/06',
+        path: '/lab/09',
         label: 'boardgame',
-        src: 'images/dk_w_rld_logo9.jpg'
+        src: 'images/dk_w_rld_logo9.jpg',
+        type:'labB'
+
     }
 ];
+
+const renderLabs = (labCardItem) => {
+    return(
+        <GridCardItem 
+            id={labCardItem.id}
+            title={labCardItem.title}
+            path={labCardItem.path}
+            label={labCardItem.label}
+            src={labCardItem.src}
+            type={labCardItem.type}
+            />
+    );
+}
 
 function Lab() {
     return (
@@ -79,17 +102,7 @@ function Lab() {
                 </div>
             </div>
             <div className="lab-grid">
-                {LabList.map(labCardItem => {
-                    return(
-                        <GridCardItem 
-                            id={labCardItem.id}
-                            title={labCardItem.title}
-                            path={labCardItem.path}
-                            label={labCardItem.label}
-                            src={labCardItem.src}
-                            />
-                    );
-                })}
+                {LabList.map(renderLabs)}
             </div>
         </div>
     )

@@ -1,3 +1,4 @@
+//react-component-imageSlider
 import React from 'react';
 import ImageSlider from '../../ImageSlider';
 import WorkTextBox from '../../WorkTextBox';
@@ -39,9 +40,9 @@ function Labs01() {
             <ImageSlider img={imageArray} list='4'/>
         </div>
         <WorkTextBox
-        desc={`다음∙이전 버튼을 누른다. \n 
+        desc={`다음∙이전 버튼을 누른다.
         ‣ 슬라이드 번호를 변경한다. \n
-        슬라이드 번호가 변경된 것이 감지된다. \n
+        슬라이드 번호가 변경된 것이 감지된다. 
         ‣ 슬라이드의 X값을 이동한다.`}
         size="md"
         />

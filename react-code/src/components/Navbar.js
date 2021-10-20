@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import './Navbar.css';
 import {
     Link
@@ -7,7 +7,7 @@ import {
 
 function Navbar() {
     const [click, setClick] = useState(false);
-    const [button, setButton] = useState(true);
+    // const [button, setButton] = useState(true);
 
     // const handleClick = () => setClick(!click);
     const handleClick = function(){

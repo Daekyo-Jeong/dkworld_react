@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 // import { debounce } from 'lodash';
 
 const SIZES = {
@@ -7,8 +7,7 @@ const SIZES = {
     card: 'work-img--cardsize'
 };
 
-var imgbox = null;
-var defaultFolder = '../../images/works_images/';
+const defaultFolder = '../../images/works_images/';
 
 function WorkImageBox({src, size}) {
     const imgSize = SIZES[size];
@@ -73,16 +72,6 @@ function WorkImageBox({src, size}) {
         <>
         <img className={imgSize} src={defaultFolder+src} alt="Work"/>
         </>
-    )
-}
-
-function WorkImageBoxGrid({src1, src2, size}){
-    const imgSize = SIZES[size];
-    return(
-        <div className={imgSize+"--wrap"}>
-            <img className={imgSize} src={defaultFolder+src1} alt="Work"/>
-            <img className={imgSize} src={defaultFolder+src2} alt="Work"/>
-        </div>
     )
 }
 

@@ -56,6 +56,10 @@
     grid-area: img;
 }
 
+.work-intro-img-wrap figure{
+
+}
+
 .work-intro-img {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }

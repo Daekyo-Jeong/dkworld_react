@@ -19,7 +19,7 @@
     transition: ease .5s;
 }
 
-.grid-card-item__img-wrap:before{
+.grid-card-item__img__work-wrap:before{
     position: absolute;
     content: attr(data-category);
     margin: 10px;
@@ -27,6 +27,26 @@
     max-width: calc((100%) - 60px);
     color: #fff;
     background-color: #ff7c7c;
+}
+
+.grid-card-item__img__lab-wrap:before{
+    position: absolute;
+    content: attr(data-category);
+    margin: 10px;
+    padding: 6px 8px;
+    max-width: calc((100%) - 60px);
+    color: #fff;
+    background-color: #00000090;
+}
+
+.grid-card-item__img__lab-app-wrap:before{
+    position: absolute;
+    content: attr(data-category);
+    margin: 10px;
+    padding: 6px 8px;
+    max-width: calc((100%) - 60px);
+    color: #fff;
+    background-color: #7c7eff90;
 }
 
 @media screen and (min-width:1024px) {
