@@ -16,21 +16,29 @@
 .image-slider img{
 }
 
+.image-slider-textcolor--white{
+    color: white;
+}
+
+.image-slider-textcolor--black{
+    color: black;
+}
+
 .image-slider__button{
     border: none;
-    color: black;
     background: none;
     width: 50px;
     position: absolute;
-    top: 95%;
+    top: 90%;
     transform: translateY(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0.5;
     z-index: 200;
-    cursor: pointer;
+    cursor: pointer; 
 }
+
 .image-slider__button:hover{
     opacity: 1;
 }
@@ -45,7 +53,7 @@
 
 .image-slider__nav{
     position: absolute;
-    top: 95%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%,-50%);
 }

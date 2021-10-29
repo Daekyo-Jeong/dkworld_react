@@ -35,7 +35,7 @@ function Work04() {
                 client1="Java"
                 client2="Photoshop"
                 client3=""
-                src="../../images/dk_w_rld_logo5.jpg"
+                src="../../images/works_images/universe/universe.png"
                 statement="프로그래밍을 이용한 2D 편집 디자인. 
                 홍익대학교 학생들에게 '학번'이라는 고유번호가 있고, 
                 개개인마다 학번을 이용해 각자의 로고를 이용한 명함 제작 프로젝트"
@@ -56,12 +56,16 @@ function Work04() {
             src1="universe/card2.jpg"
             src2="universe/card.jpg"
             />
-           <ImageSlider list="3" img={slideImageList}/>
+           <ImageSlider list="3" img={slideImageList} color="white"/>
             <WorkTextBox
             size="md"
             desc="우주라는 작품의 이름은 각자의 개성이자 성격, 가치관 등을 의미하며 고유한 학번과 닮아 있는 
             개개인의 우주를 품고 있습니다."
             ></WorkTextBox>
+            <WorkImageBox
+            size="max"
+            src="universe/universe-algorithm.png"
+            ></WorkImageBox>
         </>
     )
 }

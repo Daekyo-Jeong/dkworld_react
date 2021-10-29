@@ -51,6 +51,34 @@
       box-sizing: border-box;
   }
 
+  .cards-link{
+      position: relative;
+      margin-top: -70px;
+      margin-bottom: 50px;
+      text-align: center;
+      font-size: 2rem;
+      
+  }
+
+  .cards-link::before{
+      content: '';
+      position: absolute;
+      width: 0px;
+      height: 8px;
+      background-color: rgba(0, 255, 153, 0.5);
+      z-index: -1;
+      bottom: 0;
+      transition: 0.5s ease all;
+  }
+
+  .cards-link:hover::before{
+      width: 92px;
+  }
+
+  /* .cards-link a:hover{
+    text-decoration: 5px rgba(0, 255, 153, 0.5) underline;
+  } */
+
   @media screen and (min-width : 960px) {
       .cards__item {
         grid-template-columns: repeat(2, 1fr);
@@ -84,5 +112,9 @@
 
       .cards__item__title {
           font-size: 6rem;
+      }
+
+      .cards-link{
+          margin-bottom: 150px;
       }
   }

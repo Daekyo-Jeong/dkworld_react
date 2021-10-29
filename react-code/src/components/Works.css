@@ -1,18 +1,31 @@
-.works{
+.works-title{
+    font-size: 8rem;
+}
+
+.works-introduce{
+    font-size: 1.7rem;
+}
+
+.works-info{
+    margin-bottom: 70px;
+    padding-bottom: 50px;
+}
+
+.works-grid{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 50px;
 }
 
 @media screen and (min-width:512px){
-    .works{
+    .works-grid{
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 30px;
     }
 }
 
 @media screen and (min-width:1024px) {
-    .works{
+    .works-grid{
         grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 30px;
         grid-row-gap: 70px;

@@ -67,7 +67,7 @@
     }
 }
 
-@media screen and (min-width : 1024px){
+@media screen and (min-width : 700px){
     .about-greeting {
         font-size: 8rem;
     }

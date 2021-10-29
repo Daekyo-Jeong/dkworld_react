@@ -58,7 +58,7 @@ function Work04() {
             size="md"
             desc="서체는 로고의 형태에서 차용하여, 공식 서체를 올림픽 브랜드에 보다 어울리도록 디자인하였습니다."
             ></WorkTextBox>
-           <ImageSlider list="3" img={slideImageList}/>
+           <ImageSlider list="3" img={slideImageList} color="black"/>
            <WorkTextBox
             size="md"
             desc="올림픽에서 사용되는 어플리케이션 배너, 티켓, 픽토그램 또한 로고의 형태에서 착안하여 리스본과 마드리드의 

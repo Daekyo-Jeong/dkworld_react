@@ -4,7 +4,7 @@ import '../../components/Works.css';
 
 const worksList = [
     {
-        id: 1,
+        id: 'work1',
         title: 'dk_w_rld',
         path: '/works/01',
         label: 'development',
@@ -12,69 +12,53 @@ const worksList = [
         type:'work'
     },
     {
-        id: 2,
+        id: 'work2',
         title: 'Breathe',
         path: '/works/02',
         label: 'branding',
-        src: 'images/works_images/breathe.jpg',
+        src: 'images/works_images/cover/breathe.png',
         type:'work'
     },
     {
-        id: 3,
+        id: 'work3',
         title: 'Food a Cappella',
         path: '/works/03',
         label: 'artwork',
-        src: 'images/dk_w_rld_logo3.jpg',
+        src: 'images/works_images/cover/foodacappella.png',
         type:'work'
     },
     {
-        id: 4,
+        id: 'work4',
         title: 'LIMA Olympic',
         path: '/works/04',
         label: 'branding',
-        src: 'images/works_images/lima/lima-logo-7.0.png',
+        src: 'images/works_images/cover/limaolympic.png',
         type:'work'
     },
     {
-        id: 5,
+        id: 'work5',
         title: 'Universe',
         path: '/works/05',
         label: 'artwork',
-        src: 'images/dk_w_rld_logo5.jpg',
+        src: 'images/works_images/cover/universe.png',
         type:'work'
     },
     {
-        id: 6,
-        title: 'Neon',
-        path: '/works/06',
-        label: 'artwork',
-        src: 'images/dk_w_rld_logo6.jpg',
-        type:'work'
-    },
-    {
-        id: 7,
+        id: 'work6',
         title: 'Salt Factory',
-        path: '/works/07',
+        path: '/works/06',
         label: 'media art',
-        src: 'images/dk_w_rld_logo7.jpg',
+        src: 'images/works_images/cover/saltfactory.png',
         type:'work'
     },
     {
-        id: 8,
+        id: 'work7',
         title: 'Moonecklace',
-        path: '/works/08',
+        path: '/works/07',
         label: 'artwork',
-        src: 'images/dk_w_rld_logo8.jpg',
+        src: 'images/works_images/cover/moonecklace.png',
         type:'work'
     },
-    {
-        id: 9,
-        title: 'Fiit',
-        path: '/works/09',
-        label: 'boardgame',
-        src: 'images/dk_w_rld_logo9.jpg',
-        type:'work'
-    }
 ];
 
 function renderWorks(gridCardItem){
@@ -91,9 +75,18 @@ function renderWorks(gridCardItem){
 
 function Works() {
     return (
-        <div className="works">
+        <>
+            <div className="works-info">
+                    <h1 className="works-title">Works.</h1>
+                    <div className="works-introduce">
+                        <p></p>
+                        <p>작품 이미지를 클릭하면 자세한 내용을 확인할 수 있습니다.</p>
+                    </div>
+            </div>
+        <div className="works-grid">
          {worksList.map(renderWorks)}
         </div>
+        </>
     )
 }
 

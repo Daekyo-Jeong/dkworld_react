@@ -2,6 +2,7 @@
 import React from 'react';
 import ImageSlider from '../../ImageSlider';
 import WorkTextBox from '../../WorkTextBox';
+import LabIntro from '../../LabIntro';
 
 const imageArray = [
     {
@@ -23,7 +24,7 @@ const imageArray = [
 ]
 
 const style = {
-    margin: "50px auto",
+    margin: "0px auto",
     border: "1px solid red",
     maxWidth: "1000px"
 }
@@ -31,13 +32,13 @@ const style = {
 function Labs01() {
     return (
         <>
-        <h1>imageSlider</h1>
-        <h1>이미지 슬라이더</h1>
-        <br />
-        <h2>example</h2>
-        <h2>예시</h2>
+        <LabIntro
+        titlee="imageSlider"
+        titlek="이미지 슬라이더"
+        funcdesc="좌우 버튼을 누르면, 해당하는 버튼에 따라 이미지가 좌우로 이동하면서 다음 이미지로 변경"
+        updatedesc={`2021.10.19 - ver 0.1 \n 2021.10.20 - ver 0.2 \n 2021.10.27 - ver 0.3 \n : 슬라이드 버튼 컬러 선택자 추가`}/>
         <div style={style}>
-            <ImageSlider img={imageArray} list='4'/>
+            <ImageSlider img={imageArray} list='4' color="black"/>
         </div>
         <WorkTextBox
         desc={`다음∙이전 버튼을 누른다.

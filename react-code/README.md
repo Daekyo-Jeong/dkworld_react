@@ -9,6 +9,51 @@
 <br>
 
 ---
+## 20211025 - 20211029
+### pathnote
+<br>
+
+__home__
+- 작품이미지 추가
+- 작품페이지로 이동버튼 추가
+
+__works__
+- 작품 대표 이미지 통일
+- 작품 내 알고리즘 이미지 제작
+- 슬라이더 버튼 색상 선택 가능하도록 추가
+
+__to do__
+- 특정 url로 접속하여도 404가 나타나지 않도록?
+<br> : 현재는 package.json에 아래 내용을 추가해둔 상태
+
+```json
+"scripts": {
+    "start": "react-scripts start webpack-dev-server --inline --content-base . --history-api-fallback",
+  
+```
+
+- 페럴렉스 효과 추가하기
+- 작품 세부 페이지 다듬기
+
+---
+
+## 20211022
+### pathnote
+<br>
+
+__Lab__
+- LabIntro.js 추가
+<br>
+: lab page를 보다 정돈된 형태(의약품설명서 같은 느낌?)의 레이아웃으로 구상중
+
+__to do__
+- works content 내용물 추가 이미지 작업 필요
+- visual coding 해보기
+<br>
+: neon, universe, food a capella 등
+
+---
+
 ## 20211020
 ### pathnote
 <br>

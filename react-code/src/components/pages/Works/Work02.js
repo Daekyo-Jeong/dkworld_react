@@ -81,7 +81,7 @@ function Work02() {
             디지털을 대표하는 대쉬와 닷, 숨결을 상징하는 바람 그리고 전시 네이밍의 이니셜. 이 요소들을 가지고 위와 같은 로고 심볼과 이를 응용한 로고 타입을 만들었습니다.`
             }
             />
-            <ImageSlider list="5" img={slideImageList}/>
+            <ImageSlider list="5" img={slideImageList} color="black"/>
             <WorkTextBox
             size="md"
             desc="포스터, 배너, 도록 등 모든 어플리케이션에는 브랜드 아이덴티티가 일관되게 적용됩니다."

@@ -1,0 +1,25 @@
+.lab-intro{
+    max-width: 400px;
+}
+
+.lab-title--english{
+    font-size: 2rem;
+}
+.lab-title--korean{
+    font-size: 4rem;
+}
+
+.lab-intro__info{
+    margin: 30px 0;
+    padding: 40px 0;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    font-size: 1.4rem;
+}
+
+.lab-intro__info__func{
+    margin-bottom: 30px;
+}
+
+.lab-intro__info__update{
+}

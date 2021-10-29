@@ -29,7 +29,7 @@ const LabList = [
     },
     {
         id: 4,
-        title: 'sometitle',
+        title: 'parallaxScrolling',
         path: '/lab/04',
         label: 'artwork',
         src: 'images/dk_w_rld_logo4.jpg',
@@ -94,13 +94,13 @@ const renderLabs = (labCardItem) => {
 function Lab() {
     return (
         <div className="lab">
-            <div className="lab-info">
-                <h1 className="lab-title">Lab.</h1>
-                <div className="lab-introduce">
-                    <p>이 곳은 연구실입니다.</p>
-                    <p>연구 중인 내용을 기록하고 보관합니다.</p>
+                <div className="lab-info">
+                    <h1 className="lab-title">Lab.</h1>
+                    <div className="lab-introduce">
+                        <p>이 곳은 연구실입니다.</p>
+                        <p>연구 중인 내용을 기록하고 보관합니다.</p>
+                    </div>
                 </div>
-            </div>
             <div className="lab-grid">
                 {LabList.map(renderLabs)}
             </div>
