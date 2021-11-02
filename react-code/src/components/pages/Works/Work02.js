@@ -36,13 +36,15 @@ function Work02() {
                 label="branding"
                 title="Breathe"
                 date="2019.03 - 2019.12"
+                linkname={`hongikdmd.com/breathe
+                * 현재 링크만료`}
                 field1="Web development"
                 field2="UX/UI design"
                 field3="Branding"
                 client1="html/css/js"
                 client2="Illustrator"
                 client3="Photoshop"
-                src="../../images/works_images/breathe/breathe.jpg"
+                src="breathe.png"
                 statement="4차 산업혁명이 어느 때보다 다양한 분야에서 무르익고 있는 현재,
                 어쩌면 디지털미디어는 살아 숨 쉬게 되었습니다. (media comes alive) 
                 디지털미디어디자인 전공 학생들은 디지털미디어에 

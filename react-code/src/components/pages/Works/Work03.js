@@ -18,7 +18,7 @@ function Work03() {
                 client1="Processing"
                 client2="Leap motion"
                 client3="Photoshop"
-                src="../../images/works_images/cover/foodacappella.png"
+                src="foodacappella.png"
                 statement="어릴적 학교에서 친구들과 음식 재료들의 이름을 반복해서 노래로 
                 만들던 기억을 되살려 진행한 프로젝트이다. 립모션을 활용하여 관객이 손을 이용하여 
                 가운데의 냄비로 음식을 가져와 요리할 수 있다. 각각의 재료가 담기면 음식 이름으로 노래를 하는 

@@ -37,7 +37,7 @@ const LabList = [
     },
     {
         id: 5,
-        title: 'kimchijjigea',
+        title: 'maracaibo',
         path: '/lab/05',
         label: 'boardgame',
         src: 'images/dk_w_rld_logo5.jpg',
@@ -69,7 +69,7 @@ const LabList = [
     },
     {
         id: 9,
-        title: 'Fiit',
+        title: 'terraforming mars',
         path: '/lab/09',
         label: 'boardgame',
         src: 'images/dk_w_rld_logo9.jpg',

@@ -34,9 +34,9 @@ function Work04() {
                 client1="Illustrator"
                 client2="Photoshop"
                 client3=""
-                src="../../images/works_images/lima/lima-logo-7.0.png"
+                src="limaolympic.png"
                 statement="기존의 올림픽이 가지고 있는 문제점을 해결할 수 있는 새로운 개최방안인
-                 '듀올림픽'을 제시하고, 가상으로 듀올림픽이 치뤄질 2024 하계 올림픽 브랜딩 프로젝트입니다."
+                 '듀올림픽'을 제시하고, 가상으로 듀올림픽이 치뤄질 2024 하계 올림픽 브랜딩 프로젝트."
             ></WorkIntro>
             <WorkImageBox
             size="max"
@@ -56,13 +56,13 @@ function Work04() {
             ></WorkImageBox>
             <WorkTextBox
             size="md"
-            desc="서체는 로고의 형태에서 차용하여, 공식 서체를 올림픽 브랜드에 보다 어울리도록 디자인하였습니다."
+            desc="서체는 로고의 형태에서 차용하여, 공식 서체를 올림픽 브랜드에 보다 어울리도록 디자인하였다."
             ></WorkTextBox>
            <ImageSlider list="3" img={slideImageList} color="black"/>
            <WorkTextBox
             size="md"
             desc="올림픽에서 사용되는 어플리케이션 배너, 티켓, 픽토그램 또한 로고의 형태에서 착안하여 리스본과 마드리드의 
-            분위기가 잘 드러날 수 있도록 디자인하였습니다."
+            분위기가 잘 드러날 수 있도록 디자인하였다."
             ></WorkTextBox>
         </>
     )
