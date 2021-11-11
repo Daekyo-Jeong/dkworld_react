@@ -1,5 +1,4 @@
-  .cards {
-  }
+  .cards {}
 
   .cards__item {
       display: grid;
@@ -13,6 +12,7 @@
       height: 100%;
       box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.1);
       grid-area: cards-item-img;
+      z-index: 1;
   }
 
   .cards__item__link:hover {
@@ -40,6 +40,8 @@
       font-size: 1.2rem;
   }
 
+
+
   .cards__item__pic-wrap:before {
       position: absolute;
       content: attr(data-category);
@@ -51,28 +53,27 @@
       box-sizing: border-box;
   }
 
-  .cards-link{
-      position: relative;
-      margin-top: -70px;
-      margin-bottom: 50px;
+  .cards-link {
+      margin-top: -50px;
+      margin-bottom: 100px;
       text-align: center;
       font-size: 2rem;
-      
+
   }
 
-  .cards-link::before{
-      content: '';
-      position: absolute;
-      width: 0px;
-      height: 8px;
-      background-color: rgba(0, 255, 153, 0.5);
-      z-index: -1;
-      bottom: 0;
-      transition: 0.5s ease all;
+  .cards-link a {
+      color: #fff9f9;
+      text-shadow:
+          -1px -1px 0 #242424,
+          1px -1px 0 #242424,
+          -1px 1px 0 #242424,
+          1px 1px 0 #242424;
+      transition: .5s ease;
   }
 
-  .cards-link:hover::before{
-      width: 92px;
+  .cards-link a:hover {
+      color: #242424;
+      text-shadow: none;
   }
 
   /* .cards-link a:hover{
@@ -81,8 +82,8 @@
 
   @media screen and (min-width : 960px) {
       .cards__item {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 30px;
+          grid-template-columns: repeat(2, 1fr);
+          column-gap: 30px;
       }
 
       .leftalign {
@@ -114,7 +115,8 @@
           font-size: 6rem;
       }
 
-      .cards-link{
+      .cards-link {
+          margin-top: 0;
           margin-bottom: 150px;
       }
   }

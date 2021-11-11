@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom';
 
 function WorkIntro({label, title, date, field1, field2, field3, client1, client2, client3, link, linkname, src, statement}) {
     var linkName = [];
@@ -16,6 +17,7 @@ function WorkIntro({label, title, date, field1, field2, field3, client1, client2
 
     return (
         <div className="work-intro">
+            <Link to="/works" className="work-return-button">to Works</Link>
             <div className="work-intro-info">
                 <div className="work-intro-info__title-box">
                     <h3 className="work-intro-info__label">{label}</h3>

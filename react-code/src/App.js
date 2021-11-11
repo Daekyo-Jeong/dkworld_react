@@ -19,12 +19,14 @@ import Work05 from './components/pages/Works/Work05';
 import Work06 from './components/pages/Works/Work06';
 //moonecklace
 import Work07 from './components/pages/Works/Work07';
+
 import About from './components/pages/About';
 import Lab from './components/pages/Lab';
 import Lab01 from './components/pages/Labs/Labs01';
 import Lab02 from './components/pages/Labs/Labs02';
 import Lab03 from './components/pages/Labs/Labs03';
 import Lab04 from './components/pages/Labs/Labs04';
+import Lab05 from './components/pages/Labs/Labs05';
 
 import {
   BrowserRouter as Router,
@@ -62,6 +64,7 @@ function App() {
           <Route path="/lab/02" exact component={Lab02} />
           <Route path="/lab/03" exact component={Lab03} />
           <Route path="/lab/04" exact component={Lab04} />
+          <Route path="/lab/05" exact component={Lab05} />
           {/* 
           링크가 일치하지 않을 경우 404 페이지 
           <Route component={}/> */}

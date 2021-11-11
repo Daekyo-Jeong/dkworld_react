@@ -1,51 +1,78 @@
 import React from 'react'
 import WorkIntro from '../../WorkIntro';
 import WorkImageBox from '../../WorkImageBox';
+import WorkImageBoxGrid from '../../WorkImageBoxGrid';
 import WorkTextBox from '../../WorkTextBox';
+import ImageSlider from '../../ImageSlider';
+import ReturnToWorks from '../../ReturnToWorks';
 
 import '../../WorkContents.css';
+
+const slideImageList = [
+    {
+        id: "univ1",
+        src:"../../images/works_images/universe/business card mockup_3.jpg"
+    },
+    {
+        id: "univ2",
+        src:"../../images/works_images/universe/business card mockup_1.jpg"
+    },
+    {
+        id: "univ3",
+        src:"../../images/works_images/universe/business card mockup_2.jpg"
+    }
+]
 
 function Work06() {
     return (
         <>
             <WorkIntro
                 label="artwork"
-                title="Salt Factory"
-                date="2018.11 - 2018.12"
-                field1="Development"
+                title="Universe"
+                date="2018.03 - 2018.04"
+                field1="Graphic Design"
                 field2="Interation Design"
                 field3=""
                 client1="Processing"
-                client2="Arduino"
-                client3="Garage band"
-                src="saltfactory.png"
-                statement="영화 '독전'에서 영감을 받아 제작한 사운드 인터랙션 프로젝트.
-                 DJ들이 비트를 쌓는 것이 마치 화학약품을 이것저것 합성하며 실험하는 모습과 
-                 닮았다고 생각했다. 비커의 물에 양에 따라 볼륨을 조절할 수 있고, 작업대에
-                 비커를 올리고 내리는 것으로 비트를 실행할 수 있다."
-            ></WorkIntro>
-            <video src="../../videos/Salt Factory - The Moving Instrument.mp4" controls></video>
-            <WorkTextBox 
+                client2="Photoshop"
+                client3=""
+                src="universe.png"
+                statement="프로그래밍을 이용한 2D 편집 디자인. 
+                홍익대학교 학생들에게 '학번'이라는 고유번호가 있고, 
+                개개인마다 학번을 이용해 각자의 로고를 이용한 명함 제작 프로젝트이다."
+            />
+            <WorkImageBox
+            size="over"
+            src="universe/neon-long.jpg"
+            />
+            <WorkTextBox
             size="big"
-            desc="'음악은 국가가 허락한 유일한 마약' 이라는 인터넷에 떠도는 농담처럼 하고싶었던 음악과 관련된 프로젝트를 했다."
+            desc="0-9까지 숫자에 대응되는 각 행성들의 모습은, 각기 다른 형상을 띄고 있다."
             />
             <WorkImageBox
             size="max"
-            src="saltfactory/saltfactory.png"
-            ></WorkImageBox>
-            <WorkTextBox 
+            src="universe/mix.gif"
+            />
+            <WorkImageBoxGrid
+            src1="universe/card2.jpg"
+            src2="universe/card.jpg"
+            />
+           <ImageSlider list="3" img={slideImageList} color="white"/>
+            <WorkTextBox
             size="md"
-            desc="들고 다니면서 퍼포먼스를 할 수 있는 무언가를 구상했다. 음악을 재생하는 행위 자체가 퍼포먼스가 될 길 바랐다."
+            desc="우주라는 작품의 이름은 각자의 개성이자 성격, 가치관 등을 의미하며 고유한 학번과 닮아 있는 
+            학생 개개인의 우주를 의미한다."
             />
             <WorkImageBox
-            size="max"
-            src="saltfactory/saltfactory-algorithm.png"
-            ></WorkImageBox>
-            <WorkTextBox 
-            size="md"
-            desc="센서를 판별하는 아두이노와 음악을 재생하는 프로세싱을 연동하여서 데이터를 송수신한다. 
-            압력센서를 통해서, 물의 양에 비례하여 음악의 볼륨을 조절할 수 있다. "
+            size="over"
+            src="universe/universe-algorithm.png"
             />
+            <WorkTextBox
+            size="md"
+            desc="키보드를 통해 조작이 가능하다. Print를 의미하는 P 키를 누르면 현재의 화면을 PDF로 저장할 수 있다.
+            숫자를 누르면 해당하는 행성들이 화면에 나타나고, 백스페이스키를 눌러 나타난 행성들을 지울 수 있다."
+            />
+            <ReturnToWorks/>
         </>
     )
 }

@@ -7,7 +7,7 @@
     padding: 0 30px;
     font-size: 0.8rem;
     z-index: 999;
-    opacity: 0;
+    pointer-events: none;
 }
 
 .footer__right{

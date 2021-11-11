@@ -37,45 +37,44 @@ const LabList = [
     },
     {
         id: 5,
-        title: 'maracaibo',
+        title: 'createReadUpdateDelete',
         path: '/lab/05',
         label: 'boardgame',
         src: 'images/dk_w_rld_logo5.jpg',
         type:'labB'
     },
-    {
-        id: 6,
-        title: 'agricola',
-        path: '/lab/06',
-        label: 'boardgame',
-        src: 'images/dk_w_rld_logo6.jpg',
-        type:'labB'
-    },
-    {
-        id: 7,
-        title: 'spacecrew',
-        path: '/lab/07',
-        label: 'boardgame',
-        src: 'images/dk_w_rld_logo7.jpg',
-        type:'labB'
-    },
-    {
-        id: 8,
-        title: 'burgendy',
-        path: '/lab/08',
-        label: 'boardgame',
-        src: 'images/dk_w_rld_logo8.jpg',
-        type:'labB'
-    },
-    {
-        id: 9,
-        title: 'terraforming mars',
-        path: '/lab/09',
-        label: 'boardgame',
-        src: 'images/dk_w_rld_logo9.jpg',
-        type:'labB'
-
-    }
+    // {
+    //     id: 6,
+    //     title: 'agricola',
+    //     path: '/lab/06',
+    //     label: 'boardgame',
+    //     src: 'images/dk_w_rld_logo6.jpg',
+    //     type:'labB'
+    // },
+    // {
+    //     id: 7,
+    //     title: 'spacecrew',
+    //     path: '/lab/07',
+    //     label: 'boardgame',
+    //     src: 'images/dk_w_rld_logo7.jpg',
+    //     type:'labB'
+    // },
+    // {
+    //     id: 8,
+    //     title: 'burgendy',
+    //     path: '/lab/08',
+    //     label: 'boardgame',
+    //     src: 'images/dk_w_rld_logo8.jpg',
+    //     type:'labB'
+    // },
+    // {
+    //     id: 9,
+    //     title: 'terraforming mars',
+    //     path: '/lab/09',
+    //     label: 'boardgame',
+    //     src: 'images/dk_w_rld_logo9.jpg',
+    //     type:'labB'
+    // }
 ];
 
 const renderLabs = (labCardItem) => {
@@ -99,6 +98,13 @@ function Lab() {
                     <div className="lab-introduce">
                         <p>이 곳은 연구실입니다.</p>
                         <p>연구 중인 내용을 기록하고 보관합니다.</p>
+                        <br/>
+                        <p style={{
+                            color: '#7c7eff'
+                        }}>웹 사이트에 적용</p>
+                        <p style={{
+                            color: '#00000090'
+                        }}>연구부족, 미적용 </p>
                     </div>
                 </div>
             <div className="lab-grid">

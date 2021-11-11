@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../About.css';
 
 function About() {
@@ -13,15 +13,17 @@ function About() {
                 <p>I'm Daekyo Jeong.</p>
             </div>
             <div className="about-greeting__text --ko">
-                <p>안녕하세요.</p>
-                <p className="about-greeting__dd--virtical--ko"><span className="outline-text">디자이너
-                <br />
-                </span>ㅤ │ㅤ<span className="outline-text">
-                <br/>
-                디벨로퍼</span></p>
-                <p className="about-greeting__dd--ko"><span className="outline-text">디자이너</span>ㅤ―――ㅤ<span className="outline-text">디벨로퍼</span></p>
-                <p>간극을 좁혀보고픈</p>
-                <p>정대교입니다.</p>
+                <p className="about-greeting__p--first">안녕하세요.</p>
+                <div className="about-greeting__dd--virtical--ko">
+                    <p className="outline-text">디자이너</p>
+                    <p className="outline-text">디벨로퍼</p>
+                </div>
+                <div className="about-greeting__dd--ko" >
+                    <p className="outline-text">디자이너</p>
+                    <p className="outline-text">디벨로퍼</p>
+                </div>
+                <p className="about-greeting__p--second">간극을 좁혀보고픈</p>
+                <p className="about-greeting__p--third">정대교입니다.</p>
             </div>
         </div>
         <div className="about-introduce">
@@ -58,25 +60,25 @@ function About() {
             title="경험">
             <TableData 
             date="18.12 - 19.12"
-            desc={"[봉사] 디지털미디어디자인전공 졸업준비 위원회 \n 위원장"}/>
+            desc={"디지털미디어디자인전공 졸업준비 위원회 \n 위원장"}/>
             <TableData 
             date="18.03 - 18.12"
-            desc={"[봉사] 디지털미디어디자인전공 학생회 \n 기획부원"}/>
+            desc={"디지털미디어디자인전공 학생회 \n 기획부원"}/>
             <TableData 
             date="18.03 - 18.12"
-            desc={"[소모임] 인스톨레이션 소모임 '비본' \n 스튜디오 팀장"}/>
+            desc={"인스톨레이션 소모임 '비본' \n 스튜디오 팀장"}/>
             <TableData 
             date="18.06 - 18.08"
-            desc={"[전시] 홍익대학교 거리미술전 \n 작품 '동전의 공중회전' 제작 및 설치"}/></Table>
+            desc={"홍익대학교 거리미술전 \n 작품 '동전의 공중회전' 제작 및 설치"}/></Table>
 
             <Table 
             title="수상">
             <TableData 
             date="18.11"
-            desc="조형대학 창립 30주년 과제전 3학년 대표 우수상"/>
+            desc={"조형대학 창립 30주년 과제전 \n 3학년 대표 우수상"}/>
             <TableData 
             date="15.08"
-            desc="세상을 바꾸는 인포그래픽 우수상"/></Table>
+            desc={"세상을 바꾸는 인포그래픽 \n 우수상"}/></Table>
         </div>
        </>
     )
@@ -85,7 +87,7 @@ function About() {
 function Table(props) {
     return(
         <>
-        <div className="table">
+        <div className="table" key={props.index}>
             <h2 className="table-title">{props.title}</h2>
             <div className="table-grid">{props.children}</div>
         </div>

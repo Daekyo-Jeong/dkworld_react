@@ -2,10 +2,11 @@ import React, {useState, useEffect} from 'react';
 import LabIntro from '../../LabIntro';
 
     function ParallexScrolling(){
-        const [scrollPostion, setScrollPosition] = useState(0);
+        const [scrollPosition, setScrollPosition] = useState(0);
 
         function onScroll(){
             setScrollPosition(window.scrollY);
+            console.log(scrollPosition);
         }
 
         useEffect(() => {
@@ -30,16 +31,16 @@ import LabIntro from '../../LabIntro';
                     backgroundColor : 'red',
                     width : '500px',
                     height : '500px',
-                    backgroundPositionX : scrollPostion ,
+                    backgroundPositionX : scrollPosition ,
                     margin : '0 auto',
-                    transform : `translateX(${scrollPostion*2}px)`,
+                    transform : `translateX(${scrollPosition*2}px)`,
                     transition : '.5s ease all'
                 }}></div>
                 <div className="lab4-textbox" style={{
                     width : '500px',
                     height : '500px',
                     margin : '0 auto',
-                    transform : `translateX(-${scrollPostion-150}px)`,
+                    transform : `translateX(-${scrollPosition-150}px)`,
                     transition : '.5s ease all'
                 }}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -49,7 +50,7 @@ import LabIntro from '../../LabIntro';
                     width : '500px',
                     height : '500px',
                     margin : '0 auto',
-                    transform : `translateX(-${(scrollPostion*2)-700}px)`,
+                    transform : `translateX(-${(scrollPosition*2)-700}px)`,
                     transition : '.5s ease all'
                 }}></div>
                 

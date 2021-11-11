@@ -21,42 +21,42 @@ const worksList = [
     },
     {
         id: 'work3',
-        title: 'Food a Cappella',
-        path: '/works/03',
-        label: 'artwork',
-        src: 'images/works_images/cover/foodacappella.png',
-        type:'work'
-    },
-    {
-        id: 'work4',
-        title: 'LIMA Olympic',
-        path: '/works/04',
-        label: 'branding',
-        src: 'images/works_images/cover/limaolympic.png',
-        type:'work'
-    },
-    {
-        id: 'work5',
-        title: 'Universe',
-        path: '/works/05',
-        label: 'artwork',
-        src: 'images/works_images/cover/universe.png',
-        type:'work'
-    },
-    {
-        id: 'work6',
         title: 'Salt Factory',
-        path: '/works/06',
+        path: '/works/03',
         label: 'media art',
         src: 'images/works_images/cover/saltfactory.png',
         type:'work'
     },
     {
-        id: 'work7',
+        id: 'work4',
         title: 'Moonecklace',
-        path: '/works/07',
+        path: '/works/04',
         label: 'artwork',
         src: 'images/works_images/cover/moonecklace.png',
+        type:'work'
+    },
+    {
+        id: 'work5',
+        title: 'Food a Cappella',
+        path: '/works/05',
+        label: 'artwork',
+        src: 'images/works_images/cover/foodacappella.png',
+        type:'work'
+    },
+    {
+        id: 'work6',
+        title: 'Universe',
+        path: '/works/06',
+        label: 'artwork',
+        src: 'images/works_images/cover/universe.png',
+        type:'work'
+    },
+    {
+        id: 'work7',
+        title: 'LIMA Olympic',
+        path: '/works/07',
+        label: 'branding',
+        src: 'images/works_images/cover/limaolympic.png',
         type:'work'
     },
 ];

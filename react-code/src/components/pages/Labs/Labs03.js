@@ -1,5 +1,6 @@
 //react-function-languege-switch
 import React, {useState} from 'react'
+import LabIntro from '../../LabIntro';
 
 function Labs03() {
     const [languegeSwitchDetect, setLanguegeSwitchDetect] = useState(true);
@@ -24,13 +25,20 @@ function Labs03() {
     }
 
     return (
-        <div>
+        <>
+         <LabIntro
+        titlee="languegeSwitch"
+        titlek="언어 변경 버튼"
+        funcdesc="버튼을 누르면 보이는 페이지의 텍스트 번역"
+        updatedesc={`2021.10.21 - demo`}/>
             <h1>
                 <span className="english" style={languegeSwitchDetect ? activeLanguege : passiveLanguege}>Hello, World</span>
                 <span className="korean" style={languegeSwitchDetect ? passiveLanguege : activeLanguege}>안녕, 세상아</span>
             </h1>
             <br />
-            <p>
+            <p style={{
+                width: '700px'
+            }}>
                 <span style={languegeSwitchDetect ? activeLanguege : passiveLanguege}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -45,8 +53,8 @@ function Labs03() {
                     계엄을 선포한 때에는 대통령은 지체없이 국회에 통고하여야 한다.</span>
             </p>
             <br />
-            <button style={{position: 'fixed', top:'30%'}} onClick={languegeSwitch}>{languegeSwitchButton}</button>
-        </div>
+            <button onClick={languegeSwitch}>{languegeSwitchButton}</button>
+        </>
     )
 }
 

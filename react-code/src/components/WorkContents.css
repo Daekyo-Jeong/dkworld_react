@@ -11,13 +11,12 @@
         "info"
         "img"
         "statement";
-    
 }
 
 .work-intro-info {
+    margin-top: 50px;
     position: relative;
     grid-area: info;
-    
 }
 
 .work-intro-info__label {
@@ -44,6 +43,23 @@
 
 .work-intro-info-details__date {
     grid-area: date;
+}
+
+.work-intro-info-details__link {
+    grid-area: link;
+}
+
+.work-intro-info-details__link a{
+    position: relative;
+}
+.work-intro-info-details__link a:before{
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: rgba(0, 255, 153, 0.5);
+    position: absolute;
+    bottom: 2px;
+    z-index: -1;
 }
 
 .work-intro-info-details__field {
@@ -107,13 +123,54 @@
 .textbox--bigsize{
     font-size: 2rem;
     letter-spacing: 0rem;
-    margin: 30px 0;
+    margin: 30px 0 70px 0;
 }
 
 .textbox--middlesize{
-    font-size: 1rem;
+    font-size: 1.2rem;
     letter-spacing: 0rem;
-    margin: 30px 0;
+    margin: 30px 0 70px 0;
+}
+
+.work-return-button{
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    color: #fff9f9;
+    text-shadow:
+        -1px -1px 0 #242424,
+        1px -1px 0 #242424,
+        -1px 1px 0 #242424,
+        1px 1px 0 #242424;
+    transition: .5s ease-in-out;
+}
+
+.work-return-button:hover{
+    color: #242424;
+    text-shadow:none;
+}
+
+.work-return-button--center-wrap{
+    margin-top: -50px;
+    text-align: center;
+}
+
+.work-return-button--center{
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff9f9;
+    text-shadow:
+        -1px -1px 0 #242424,
+        1px -1px 0 #242424,
+        -1px 1px 0 #242424,
+        1px 1px 0 #242424;
+    transition: .5s ease-in-out;
+}
+
+.work-return-button--center:hover{
+    color: #242424;
+    text-shadow:none;
 }
 
 @media screen and (min-width:960px) {
@@ -131,6 +188,7 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+        margin-top: 0;
     }
 
     .work-intro-info-details{
@@ -148,12 +206,12 @@
 
     /* textbox */
     .textbox--bigsize{
-        font-size: 5rem;
+        font-size: 6rem;
         margin: 50px 0;
     }
 
     .textbox--middlesize{
         font-size: 3rem;
-        margin: 50px 0;
+        margin: 50px 0 150px 0;
     }
 }

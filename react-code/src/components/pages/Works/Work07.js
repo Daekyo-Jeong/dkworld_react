@@ -1,58 +1,71 @@
 import React from 'react'
 import WorkIntro from '../../WorkIntro';
 import WorkImageBox from '../../WorkImageBox';
+import WorkTextBox from '../../WorkTextBox';
 import ImageSlider from '../../ImageSlider';
+import ReturnToWorks from '../../ReturnToWorks';
 
 import '../../WorkContents.css';
 
 const slideImageList = [
     {
-        id: "moon1",
-        src:"../../images/works_images/moonecklace/moonecklace1.jpg"
+        id: "lima1",
+        src:"../../images/works_images/lima/lima banner mockup.jpg"
     },
     {
-        id: "moon2",
-        src:"../../images/works_images/moonecklace/moonecklace2.jpg"
+        id: "lima2",
+        src:"../../images/works_images/lima/lima ticket mockup.jpg"
     },
     {
-        id: "moon3",
-        src:"../../images/works_images/moonecklace/moonecklace3.jpg"
-    },
-    {
-        id: "moon4",
-        src:"../../images/works_images/moonecklace/moonecklace4.jpg"
-    },
-    {
-        id: "moon5",
-        src:"../../images/works_images/moonecklace/moonecklace5.jpg"
+        id: "lima3",
+        src:"../../images/works_images/lima/lima-pictogram-ver0.4.png"
     }
 ]
-
 
 function Work07() {
     return (
         <>
             <WorkIntro
-                label="artwork"
-                title="Moonecklace"
-                date="2018.09 - 2018.10"
-                field1="Development"
-                field2="Interation Design"
-                field3="Physical Media"
-                client1="Java"
-                client2="Arduino"
+                label="branding"
+                title="LIMA Duolympic"
+                date="2015.10 - 2015.12"
+                field1="Graphic Design"
+                field2="Branding"
+                field3=""
+                client1="Illustrator"
+                client2="Photoshop"
                 client3=""
-                src="moonecklace.png"
-                statement="달을 형상화한 블루투스 펜던트. 블루투스 페어링이 됐을 때가 아닌 되지 않았을 때에
-                주목한 프로젝트입니다. 시 '권대웅 - 아득한 한 뼘'에서 영감을 받아 시의 느낌을 표현하고자 했습니다.
-                소중한 사람이 가까이 있지 않아도 달을 보며 소중한 사람에 대한 그리움을 그리는 펜던트입니다."
+                src="limaolympic.png"
+                statement="기존의 올림픽이 가지고 있는 문제점을 해결할 수 있는 새로운 개최 방안인
+                 '듀올림픽'을 제시하고, 가상으로 듀올림픽이 치러질 2024 하계 올림픽 브랜딩 프로젝트."
             ></WorkIntro>
-           <ImageSlider list="5" img={slideImageList} color="white"/>
             <WorkImageBox
             size="max"
-            src="moonecklace/moonecklace-algorithm.png"
+            src="lima/lima-logo-all.png"
             ></WorkImageBox>
-            알고리즘 이미지
+            <WorkTextBox
+            size="big"
+            desc="스페인과 포르투갈이 공동으로 개최하는 2024 리스본 마드리드 듀올림픽에 초대합니다!"
+            ></WorkTextBox>
+            <WorkImageBox
+            size="max"
+            src="lima/logo-analysis.png"
+            ></WorkImageBox>
+            <WorkImageBox
+            size="max"
+            src="lima/typo-analysis.png"
+            ></WorkImageBox>
+            <WorkTextBox
+            size="md"
+            desc="서체는 로고의 형태에서 차용하여, 공식 서체를 올림픽 브랜드에 보다 어울리도록 디자인하였다."
+            ></WorkTextBox>
+           <ImageSlider list="3" img={slideImageList} color="black"/>
+           <WorkTextBox
+            size="md"
+            desc="올올림픽에서 사용되는 애플리케이션 배너, 티켓, 픽토그램 또한 로고의 형태에서 착안하여 리스본과 마드리드의
+            분위기가 잘 드러날 수 있도록 디자인하였다."
+            ></WorkTextBox>
+            <ReturnToWorks/>
         </>
     )
 }

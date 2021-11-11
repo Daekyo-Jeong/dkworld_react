@@ -1,5 +1,6 @@
 //react-compoment-videoControl
-import React from 'react'
+import React from 'react';
+import LabIntro from '../../LabIntro';
 
 const videoStyle = {
     width: "100%"
@@ -18,12 +19,12 @@ const VideoTest = () => {
 function Labs02() {
     return (
         <>
-        <h1>videoControl</h1>
-        <h1>비디오 컨트롤</h1>
-        <br />
-        <h2>example</h2>
-        <h2>예시</h2>
-            <VideoTest/>
+        <LabIntro
+        titlee="videoControl"
+        titlek="비디오 컨트롤"
+        funcdesc=""
+        updatedesc={`2021.10.19 - demo`}/>
+        <VideoTest/>
         </>
     )
 }
